@@ -1,0 +1,11 @@
+particle dust{scale:2,color:[0.96,1.0,0.62]} ^ ^ ^ 0.2 0.2 0.2 0.00001 3
+particle dust{scale:2,color:[0.96,1.0,0.62]} ^ ^1 ^0.1 0.2 0.2 0.2 0.00001 3
+particle dust{scale:2,color:[0.96,1.0,0.62]} ^ ^2 ^0.2 0.2 0.2 0.2 0.00001 3
+particle dust{scale:2,color:[0.96,1.0,0.62]} ^ ^3 ^0.3 0.2 0.2 0.2 0.00001 3
+particle dust{scale:2,color:[0.96,1.0,0.62]} ^ ^4 ^0.4 0.2 0.2 0.2 0.00001 3
+particle dust{scale:2,color:[0.96,1.0,0.62]} ^ ^5 ^0.5 0.2 0.2 0.2 0.00001 3
+particle dust{scale:2,color:[0.96,1.0,0.62]} ^ ^6 ^0.6 0.2 0.2 0.2 0.00001 3
+particle dust{scale:2,color:[0.96,1.0,0.62]} ^ ^7 ^0.7 0.2 0.2 0.2 0.00001 3
+particle dust{scale:2,color:[0.96,1.0,0.62]} ^ ^8 ^0.8 0.2 0.2 0.2 0.00001 3
+particle dust{scale:2,color:[0.96,1.0,0.62]} ^ ^9 ^0.9 0.2 0.2 0.2 0.00001 3
+particle dust{scale:2,color:[0.96,1.0,0.62]} ^ ^10 ^1 0.2 0.2 0.2 0.00001 3
