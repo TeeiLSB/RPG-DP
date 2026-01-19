@@ -25,7 +25,7 @@ execute on attacker run scoreboard players operation @s mgcdmg /= #3 Constant
 scoreboard players operation @e[tag=mobs,sort=nearest,distance=..2.5,scores={HurtTime=0},limit=2,tag=!lightning_exclude] health -= @e[type=armor_stand,tag=lightning,tag=magic_marker] mgcdmg
 
 
-
+execute on attacker run function mob:main/killtp
 
 execute at @s run playsound entity.player.hurt_on_fire ambient @a ~ ~ ~ 1 1
 execute at @s run playsound entity.player.hurt_on_fire ambient @a ~ ~ ~ 1 0.8
@@ -34,7 +34,7 @@ execute at @s run playsound entity.player.hurt_on_fire ambient @a ~ ~ ~ 1 1.2
 
 
 
-execute on attacker run function mob:main/killtp
+
 
 tag @s remove lightning_exclude
 tag @s add ReceiveMagic 

@@ -29,7 +29,7 @@ particle flame ~ ~1 ~ 1 1 1 0.1 20
 
 
 
-execute as @e[tag=mobs,sort=nearest,distance=..2.5,scores={HurtTime=0},limit=4] run data merge entity @s {Fire:100}
+# execute as @e[tag=mobs,sort=nearest,distance=..2.5,scores={HurtTime=0},limit=4] run data merge entity @s {Fire:100}
 
 tag @s remove fire_ball_exclude
 

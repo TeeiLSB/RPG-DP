@@ -1,3 +1,12 @@
+execute as @e[tag=mobs] store result score @s HurtTime run data get entity @s HurtTime
+execute as @a store result score @s HurtTime run data get entity @s HurtTime
+
+scoreboard players reset *[scores={HurtTime=0}] HurtTime
+
+
+
+
+
 function player:join
 
 function player:gamemode/tick
@@ -38,7 +47,6 @@ execute if score $Tick tick matches 21 run scoreboard players set $Tick tick 1
 
 function effect:fire/fire_tick
 
-function magic:magic_effect/tick
 
 
 

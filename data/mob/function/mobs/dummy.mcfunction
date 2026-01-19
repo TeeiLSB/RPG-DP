@@ -1,6 +1,6 @@
-scoreboard players set @s maxhealth 1000000
-scoreboard players set @s health 1000000
-scoreboard players set @s prehp 1000000
+scoreboard players set @s maxhealth 300
+scoreboard players set @s health 300
+scoreboard players set @s prehp 300
 scoreboard players set @s atkdmg 0
 scoreboard players set @s defense 0
 
