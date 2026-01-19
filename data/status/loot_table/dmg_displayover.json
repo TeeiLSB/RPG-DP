@@ -1,0 +1,61 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "glass_bottle",
+                    "functions": [
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{Tags:[\"hpdisplay\"]}"
+                        },
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "nbt": "hp.name",
+                                    "storage": "lib:",
+                                    "color": "yellow"
+                                },
+                                {
+                                    "text": " [",
+                                    "color": "gray"
+                                },
+                                {
+                                    "nbt": "hp.value",
+                                    "storage": "lib:",
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": ".",
+                                    "color": "gold"
+                                },
+                                {
+                                    "nbt": "hp.decvalue",
+                                    "storage": "lib:",
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": "/",
+                                    "color": "white"
+                                },
+                                {
+                                    "nbt": "hp.max",
+                                    "storage": "lib:",
+                                    "color": "green"
+                                },
+                                {
+                                    "text": "]",
+                                    "color": "gray"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

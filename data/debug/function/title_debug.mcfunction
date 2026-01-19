@@ -1,0 +1,1 @@
+# title @s title [{"text":"score "},{"score":{"name":"@s","objective":"HP"}}]

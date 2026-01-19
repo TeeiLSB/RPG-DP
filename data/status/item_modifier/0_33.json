@@ -1,0 +1,61 @@
+[
+  {
+    "function": "set_custom_data",
+    "tag": "{Tags:[\"hpdisplay\"]}"
+  },
+  {
+    "function": "set_name",
+    "entity": "this",
+    "name": [
+      {
+        "nbt": "hp.color",
+        "storage": "lib:"
+      },
+      {
+        "nbt": "hp.name",
+        "storage": "lib:"
+      },
+      {
+        "text": " [",
+        "color": "gray"
+      },
+      {
+        "nbt": "hp.value",
+        "storage": "lib:",
+        "color": "red"
+      },
+      {
+        "text": ".",
+        "color": "red"
+      },
+      {
+        "nbt": "hp.decvalue",
+        "storage": "lib:",
+        "color": "red"
+      },
+      {
+        "text": "/",
+        "color": "white"
+      },
+      {
+        "nbt": "hp.max",
+        "storage": "lib:",
+        "color": "green"
+      },
+      {
+        "text": "]",
+        "color": "gray"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:equippable": {
+        "slot": "saddle",
+        "equip_sound": "minecraft:intentionally_empty",
+        "shearing_sound": "minecraft:intentionally_empty"
+      }
+    }
+  }
+]

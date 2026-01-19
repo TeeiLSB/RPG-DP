@@ -1,0 +1,1 @@
+give @s iron_sword[attribute_modifiers=[{type:attack_damage,amount:999,slot:mainhand,operation:add_value,id:"1760485176629"},{type:attack_speed,amount:100,slot:mainhand,operation:add_value,id:"1760485300217"}]]

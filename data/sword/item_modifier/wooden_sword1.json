@@ -1,0 +1,4 @@
+{
+  "function": "minecraft:set_custom_data",
+  "tag": "{Sword_Skill:1,Damage:50,Sword:1,Ability:1,AbName:\"投剣\"}"
+}

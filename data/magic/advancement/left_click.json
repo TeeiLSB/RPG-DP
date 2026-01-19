@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "criteria": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [],
+        "entity": {
+          "nbt": "{Tags:[\"magic_select\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "magic:magic_staff_select/left_click"
+  }
+}

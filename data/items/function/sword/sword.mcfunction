@@ -1,0 +1,2 @@
+execute as @s[predicate=hasitem:vampiresword] run item modify entity @s weapon.mainhand items:vampiresword
+execute as @s[predicate=hasitem:vampiresword] run item modify entity @s weapon.mainhand items:blood_vampiresword

@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "components": {
+          "minecraft:custom_data": "{magic_staff:true,Reach:-10,mmax_mp:50}"
+        }
+      }
+    }
+  }
+}

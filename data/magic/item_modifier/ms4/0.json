@@ -1,0 +1,50 @@
+[
+      {
+    "function": "minecraft:set_custom_data",
+    "tag": "{craftui4:1}"
+  },
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:angler_pottery_sherd",
+    "conditions": []
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:black_stained_glass_pane"
+    }
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "魔法スロット 4",
+      "color": "yellow",
+      "italic": false
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "クリックして",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "魔法",
+        "extra": [
+          {
+            "text": "を追加する",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "color": "dark_purple",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

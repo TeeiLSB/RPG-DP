@@ -1,0 +1,49 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "血を",
+        "extra": [
+          {
+            "score": {
+              "objective": "bloodlevel",
+              "name": "@s"
+            },
+            "extra": [
+              {
+                "text": "消費してHPを",
+                "extra": [
+                  {
+                    "score": {
+                      "objective": "bloodlevel",
+                      "name": "@s"
+                    },
+                    "extra": [
+                      {
+                        "text": "回復する",
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ],
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
+                "color": "gray",
+                "italic": false
+              }
+            ],
+            "color": "red",
+            "italic": false
+          }
+        ],
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 7
+  }
+]

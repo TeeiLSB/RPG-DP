@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "criteria": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{magic_staff:true,Reach:-10,mmax_mp:50}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "magic:magic_staff_select/right_click"
+  }
+}

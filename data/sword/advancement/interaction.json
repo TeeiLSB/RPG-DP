@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "criteria": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [],
+        "entity": {
+          "nbt": "{Tags:[\"sword_interaction\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "sword:interaction_hit"
+  }
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{craftui2:2}"
+  },
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:angler_pottery_sherd",
+    "conditions": []
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:yellow_stained_glass_pane"
+    }
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "魔法スロット 2",
+      "color": "yellow",
+      "italic": false
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "魔導書",
+        "extra": [
+          {
+            "text": "をクリック",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "color": "light_purple",
+        "italic": false
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "クリックしてキャンセル",
+        "color": "red",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

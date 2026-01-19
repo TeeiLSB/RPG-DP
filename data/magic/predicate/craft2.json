@@ -1,0 +1,11 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "slots": {
+      "player.crafting.2": {
+        "items": "minecraft:air"
+      }
+    }
+  }
+}

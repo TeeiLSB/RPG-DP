@@ -1,0 +1,1 @@
+function items:sword/sword

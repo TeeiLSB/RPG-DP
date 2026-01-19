@@ -1,0 +1,2 @@
+gamerule naturalRegeneration false
+gamerule fallDamage false

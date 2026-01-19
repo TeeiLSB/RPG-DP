@@ -1,0 +1,1 @@
+$attribute @s entity_interaction_range base set $(value)

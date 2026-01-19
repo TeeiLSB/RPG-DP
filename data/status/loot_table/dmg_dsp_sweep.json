@@ -1,0 +1,39 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "glass_bottle",
+          "functions": [
+            {
+              "function": "set_custom_data",
+              "tag": "{dmg_dsp:1}"
+            },
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "nbt": "dmg.value",
+                  "storage": "lib:",
+                  "color": "gray"
+                },
+                {
+                  "text": ".",
+                  "color": "gray"
+                },
+                {
+                  "nbt": "dmg.decvalue",
+                  "storage": "lib:",
+                  "color": "gray"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

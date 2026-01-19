@@ -1,0 +1,1 @@
+execute if entity @p[distance=..30] if entity @s[tag=Name.Husk_Warrior] run function mob:mob_action/enemys/husk_warrior

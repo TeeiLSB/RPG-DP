@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "chest": {
+        "items": "glass_bottle",
+        "components": {
+          "minecraft:custom_data": "{motion_item:true}"
+        }
+      }
+    }
+  }
+}

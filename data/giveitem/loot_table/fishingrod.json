@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 10,
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "レアじゃないとか言っておいて",
+                  "color": "#e8e8e8",
+                  "italic": false
+                },
+                {
+                  "text": "まあまあレアだったりする",
+                  "color": "#fcfcfc",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "minecraft:attack_speed",
+                  "amount": -2.4,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ],
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "text": "釣竿の用な剣",
+                "extra": [
+                  {
+                    "text": " [NOT RARE]",
+                    "color": "#e4d611",
+                    "italic": false
+                  }
+                ],
+                "color": "#f38620",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

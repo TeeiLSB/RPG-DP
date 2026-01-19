@@ -1,0 +1,57 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "ブラッドレベル: ",
+        "extra": [
+          {
+            "score": {
+              "objective": "bloodlevel",
+              "name": "@s"
+            },
+            "color": "dark_red",
+            "italic": false
+          }
+        ],
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "次のレベルまで: ",
+        "extra": [
+          {
+            "score": {
+              "objective": "nextBlood",
+              "name": "@s"
+            },
+            "extra": [
+              {
+                "text": " / ",
+                "extra": [
+                  {
+                    "score": {
+                      "objective": "BloodProg",
+                      "name": "@s"
+                    },
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "color": "gray",
+                "italic": false
+              }
+            ],
+            "color": "red",
+            "italic": false
+          }
+        ],
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "mode": "replace_section",
+    "offset": 10
+  }
+]
