@@ -3,6 +3,8 @@ scoreboard players set @s health 400
 scoreboard players set @s prehp 400
 scoreboard players set @s atkdmg 20
 scoreboard players set @s defense 0
+scoreboard players set @s maxmp 200
+scoreboard players set @s mp 200
 
 effect give @s instant_damage infinite 252 true
 

@@ -13,6 +13,10 @@ scoreboard objectives add damage_receive dummy
 scoreboard objectives add rng dummy
 scoreboard objectives add has_sword dummy
 
+# bgm
+scoreboard objectives add bgm_time dummy
+
+
 # temp
 scoreboard objectives add Temporary dummy
 

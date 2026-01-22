@@ -12,7 +12,7 @@ execute unless score @s prehp = @s health run scoreboard players operation @s dm
 execute unless score @s prehp = @s health run execute store result storage lib: dmg.value int 1 run scoreboard players get @s dmgdsp
 execute unless score @s prehp = @s health run execute store result storage lib: dmg.decvalue int 1 run scoreboard players get @s dmgdecdsp
 
-execute unless score @s prehp = @s health run tellraw @p {"nbt":"dmg.value","storage":"lib:"}
+# execute unless score @s prehp = @s health run tellraw @p {"nbt":"dmg.value","storage":"lib:"}
 
 execute if entity @s[tag=ReceiveNonCrit] unless score @s prehp = @s health run loot spawn ~ ~ ~ loot status:dmg_dsp
 execute if entity @s[tag=ReceiveCrit] unless score @s prehp = @s health run loot spawn ~ ~ ~ loot status:dmg_dsp_crit

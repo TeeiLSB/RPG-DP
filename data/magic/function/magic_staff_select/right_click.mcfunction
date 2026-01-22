@@ -2,8 +2,8 @@ execute if score @s reqmp <= @s mp if score @s magic_prog matches 0 run scoreboa
 execute if score @s reqmp <= @s mp if score @s magic_prog matches 0 run function magic:cast/timer/tick
 
 
-execute if score @s magic_prog matches 2 run function magic:cast/fire/tick
 
+execute if score @s magic_prog matches 2 run function magic:cast/fire/tick
 
 
 

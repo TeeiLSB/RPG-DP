@@ -5,3 +5,4 @@ $execute if items entity @s player.cursor field_masoned_banner_pattern[custom_da
 $execute if items entity @s player.cursor field_masoned_banner_pattern[custom_data={MagicID:2}] run scoreboard players set @s $(obj) 2
 $execute if items entity @s player.cursor field_masoned_banner_pattern[custom_data={MagicID:3}] run scoreboard players set @s $(obj) 3
 $execute if items entity @s player.cursor field_masoned_banner_pattern[custom_data={MagicID:4}] run scoreboard players set @s $(obj) 4
+$execute if items entity @s player.cursor field_masoned_banner_pattern[custom_data={MagicID:5}] run scoreboard players set @s $(obj) 5

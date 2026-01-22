@@ -23,4 +23,8 @@ function mob:reload
 
 function magic:reload
 
+
+scoreboard players set $bgm bgm_time 0
+
+
 say Reloaded!

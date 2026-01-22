@@ -1,10 +1,3 @@
-execute as @e[tag=mobs] store result score @s HurtTime run data get entity @s HurtTime
-execute as @a store result score @s HurtTime run data get entity @s HurtTime
-
-scoreboard players reset *[scores={HurtTime=0}] HurtTime
-
-
-
 
 
 function player:join
@@ -40,7 +33,7 @@ function status:tick
 
 execute as @a at @s run function items:main/tick
 
-
+# execute as @a at @s run function bgm:tick
 
 scoreboard players add $Tick tick 1
 execute if score $Tick tick matches 21 run scoreboard players set $Tick tick 1

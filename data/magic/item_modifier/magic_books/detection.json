@@ -1,0 +1,56 @@
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:writable_book"
+    }
+  },
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "魔力探知",
+      "color": "white",
+      "italic": false
+    }
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "消費",
+        "extra": [
+          {
+            "text": "MP",
+            "color": "dark_aqua",
+            "italic": false
+          },
+          {
+            "text": ": ",
+            "extra": [
+              {
+                "text": "4",
+                "color": "dark_aqua",
+                "italic": false
+              }
+            ],
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "クリックしてリセット",
+        "color": "red",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

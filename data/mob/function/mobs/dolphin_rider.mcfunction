@@ -3,6 +3,8 @@ scoreboard players set @s health 300
 scoreboard players set @s prehp 300
 scoreboard players set @s atkdmg 40
 scoreboard players set @s defense 10
+scoreboard players set @s maxmp 200
+scoreboard players set @s mp 200
 
 effect give @s instant_damage infinite 252 true
 effect give @s water_breathing infinite 255 true

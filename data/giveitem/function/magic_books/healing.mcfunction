@@ -6,5 +6,5 @@ give @s field_masoned_banner_pattern\
                     [{"text":""}],\
                         [{"text":"healing","color":"green","italic":false,"font":"minecraft:alt"}],\
                             [{"text":""}],[{"text":"希少度: ","color":"gray","italic":false},\
-                                {"text":"ノーマル","color":"white","italic":false}]],\
+                                {"text":"D","color":"white","italic":false}]],\
                                     custom_data={MagicID:4}]
