@@ -1,3 +1,4 @@
+playsound item.firecharge.use master @s ~ ~ ~ 1 0.1
 
 execute as @e[distance=..20,scores={maxmp=1..},tag=mobs] run effect give @s glowing 1 0 true
 

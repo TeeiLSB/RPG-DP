@@ -20,7 +20,7 @@ scoreboard players operation @s hpdisplay /= @s maxhealth
 
 
 execute store result storage player: HPgui.value int 1 run scoreboard players get @s hpdisplay
-function status:health/health_gui with storage player: HPgui
+# function status:health/health_gui with storage player: HPgui
 data remove storage player: HPgui
 
 effect give @s health_boost infinite 0 true
