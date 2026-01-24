@@ -27,7 +27,7 @@ execute as @e[tag=mobs,type=!player] at @s run function status:display/dmg_dsp
 
 
 
-execute as @a at @s if score @s health matches 201.. run function status:absorb/calc
+# execute as @a at @s if score @s health matches 201.. run function status:absorb/calc
 
 execute as @a at @s run function status:attackdamage/dataget
 
