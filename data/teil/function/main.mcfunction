@@ -40,6 +40,8 @@ execute if score $Tick tick matches 21 run scoreboard players set $Tick tick 1
 
 function effect:fire/fire_tick
 
+execute as @a at @s run function quest:tick
+
 
 
 

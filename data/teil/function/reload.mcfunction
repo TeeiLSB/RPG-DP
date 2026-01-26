@@ -23,6 +23,8 @@ function mob:reload
 
 function magic:reload
 
+function quest:reload
+
 
 scoreboard players set $bgm bgm_time 0
 
