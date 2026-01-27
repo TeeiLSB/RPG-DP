@@ -13,10 +13,10 @@ execute if score $dungeon.sand:5 rng matches 1 if score $dungeon.sand:3 rng matc
 
 
 
-execute if score $dungeon.sand:7 rng matches 1 run clone 960 0 1008 975 6 1023 1008 0 1016
+execute if score $dungeon.sand:7 rng matches 1 positioned 1008 0 1016 run function dungeon:sand/asset_rooms/big_c
 
-execute if score $dungeon.sand:7 rng matches 2 run clone 960 0 992 975 6 1007 1008 0 1016
+execute if score $dungeon.sand:7 rng matches 2 positioned 1008 0 1016 run function dungeon:sand/asset_rooms/big_b
 
 
-execute if score $dungeon.sand:7 rng matches 3 run clone 984 0 984 991 6 991 1008 0 1016
-execute if score $dungeon.sand:7 rng matches 4 run clone 984 0 992 991 6 999 1008 0 1016
+execute if score $dungeon.sand:7 rng matches 3 positioned 1008 0 1016 run function dungeon:sand/asset_rooms/ud
+execute if score $dungeon.sand:7 rng matches 4 positioned 1008 0 1016 run function dungeon:sand/asset_rooms/udr

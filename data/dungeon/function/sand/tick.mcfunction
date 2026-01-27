@@ -1,0 +1,1 @@
+function dungeon:sand/joined_room

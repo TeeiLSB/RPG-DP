@@ -133,4 +133,6 @@ function item_ability:ability_scoreboard
 # numbers
 function number:constant
 
+# dungeon
+scoreboard objectives add dungeon.joinend.sand dummy
 

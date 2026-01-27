@@ -4,5 +4,5 @@ execute if score $dungeon.sand:5 rng matches 1 if score $dungeon.sand:8 rng matc
 
 
 # 左下空き
-execute if score $dungeon.sand:12 rng matches 1 run clone 984 0 976 991 6 983 1016 0 1024
-execute if score $dungeon.sand:12 rng matches 2 run clone 984 0 1016 991 6 1023 1016 0 1024
+execute if score $dungeon.sand:12 rng matches 1 positioned 1016 0 1024 run function dungeon:sand/asset_rooms/ld
+execute if score $dungeon.sand:12 rng matches 2 positioned 1016 0 1024 run function dungeon:sand/asset_rooms/l

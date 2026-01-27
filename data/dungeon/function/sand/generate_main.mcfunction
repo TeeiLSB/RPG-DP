@@ -1,3 +1,9 @@
+tp @s 1004.0 1.0 1004.0
+
+
+execute positioned 1016 0 1016 run kill @e[type=marker,tag=sand.marker,distance=..50]
+execute positioned 1016 0 1016 run kill @e[tag=mobs,distance=..50]
+
 fill 1000 0 1000 1031 10 1031 air
 
 # 976 0 984 983 1 991 上以外空き 
@@ -31,4 +37,5 @@ function dungeon:sand/rooms/14
 function dungeon:sand/rooms/15
 function dungeon:sand/rooms/16
 
-tp @s 1004.0 1.0 1004.0
+
+

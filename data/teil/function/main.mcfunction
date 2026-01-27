@@ -43,6 +43,9 @@ function effect:fire/fire_tick
 execute as @a at @s run function quest:tick
 
 
+function dungeon:sand/tick
+
+
 
 
 
