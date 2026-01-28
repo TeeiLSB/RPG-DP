@@ -9,3 +9,4 @@ execute if entity @s[tag=Name.dolphin] run data modify storage lib: hp.name set 
 execute if entity @s[tag=Name.CaveZombie] run data modify storage lib: hp.name set value "洞窟ゾンビ"
 execute if entity @s[tag=Name.CaveSpider] run data modify storage lib: hp.name set value "洞窟クモ"
 execute if entity @s[tag=Name.Husk_Warrior] run data modify storage lib: hp.name set value "ハスクウォーリアー"
+execute if entity @s[tag=Name.Mimic] run data modify storage lib: hp.name set value "ミミック"

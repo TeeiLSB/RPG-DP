@@ -19,7 +19,7 @@ execute if entity @p[distance=..15,tag=player] if score @s[nbt={OnGround:true}] 
 execute if entity @p[distance=..15,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 47 run particle minecraft:block{block_state:sand} ~ ~0.5 ~ 0.5 0.5 0.5 0.1 15
 
 
-execute if entity @p[distance=..10,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 57 run function player:motion/motion_apply {"x":"0","y":"3","z":"0","xm":"5","ym":"0","zm":"9"}
+execute if entity @p[distance=..10,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 57 run function player:motion/motion_apply {"x":"0","y":"3","z":"0","xm":"5","ym":"0","zm":"6"}
 execute if entity @p[distance=..10,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 57 run particle minecraft:block{block_state:sand} ~ ~0.5 ~ 0.5 0.5 0.5 0.1 15
 
 
@@ -32,17 +32,17 @@ execute if score @s mob_tick_count matches 65 run scoreboard players set @s atkd
 execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 76 run function player:motion/motion_apply {"x":"5","y":"4","z":"2","xm":"0","ym":"0","zm":"0"}
 execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 76 run particle minecraft:block{block_state:sand} ~ ~0.5 ~ 0.5 0.1 0.5 0.1 10
 
-execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 95 run function player:motion/motion_apply {"x":"0","y":"3","z":"0","xm":"6","ym":"0","zm":"3"}
+execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 95 run function player:motion/motion_apply {"x":"0","y":"3","z":"0","xm":"6","ym":"0","zm":"2"}
 execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 95 run particle minecraft:block{block_state:sand} ~ ~0.5 ~ 0.5 0.1 0.5 0.1 10
-execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 105 run function player:motion/motion_apply {"x":"6","y":"3","z":"0","xm":"0","ym":"0","zm":"4"}
+execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 105 run function player:motion/motion_apply {"x":"6","y":"3","z":"0","xm":"0","ym":"0","zm":"3"}
 
 execute if score @s mob_tick_count matches 105 run item replace entity @s weapon.mainhand with iron_sword
 execute if score @s mob_tick_count matches 105 run scoreboard players set @s atkdmg 25
 
 execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 105 run particle minecraft:block{block_state:sand} ~ ~0.5 ~ 0.5 0.1 0.5 0.1 10
-execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 115 run function player:motion/motion_apply {"x":"0","y":"3","z":"0","xm":"6","ym":"0","zm":"5"}
+execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 115 run function player:motion/motion_apply {"x":"0","y":"3","z":"0","xm":"6","ym":"0","zm":"4"}
 execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 115 run particle minecraft:block{block_state:sand} ~ ~0.5 ~ 0.5 0.1 0.5 0.1 10
-execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 125 run function player:motion/motion_apply {"x":"6","y":"3","z":"0","xm":"0","ym":"0","zm":"6"}
+execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 125 run function player:motion/motion_apply {"x":"6","y":"3","z":"0","xm":"0","ym":"0","zm":"5"}
 execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 125 run particle minecraft:block{block_state:sand} ~ ~0.5 ~ 0.5 0.1 0.5 0.1 10
 
 

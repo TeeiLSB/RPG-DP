@@ -21,7 +21,7 @@ execute if entity @s[tag=Rank.B] run data modify storage lib: hp.color set value
 execute if entity @s[tag=Rank.A] run data modify storage lib: hp.color set value "§c"
 execute if entity @s[tag=Rank.S] run data modify storage lib: hp.color set value "§d"
 
-function status:display/mobnames
+function mob:mobnames
 
 function status:display/hprate
 function status:display/replace
