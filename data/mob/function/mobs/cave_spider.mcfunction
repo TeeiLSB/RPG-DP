@@ -8,6 +8,8 @@ scoreboard players set @s mp 200
 
 effect give @s instant_health infinite 252 true
 
+execute on vehicle run function mob:main/killtp
+
 tag @s add Name.CaveSpider
 tag @s add Rank.D
 

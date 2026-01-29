@@ -8,7 +8,7 @@ scoreboard players set @s mp 200
 
 effect give @s instant_damage infinite 252 true
 
-
+execute on vehicle run function mob:main/killtp
 
 tag @s add Name.CaveZombie
 tag @s add Rank.B

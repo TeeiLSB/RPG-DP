@@ -25,7 +25,7 @@ execute if score @s chant_time_rate matches 8..9 run particle dust{scale:1,color
 execute if score @s chant_time_rate matches 10 run particle dust{scale:1,color:[0.26,0.43,0.92]} ~ ~1 ~ 0.5 0.5 0.5 0 4
 
 
-execute if score @s chant_time matches 1 run playsound entity.generic.swim master @s ~ ~ ~ 1 0.8
+execute if score @s chant_time matches 2 run playsound entity.generic.swim master @s ~ ~ ~ 1 0.8
 execute if score @s chant_time matches 12 run playsound entity.generic.swim master @s ~ ~ ~ 1.2 0.7
 execute if score @s chant_time matches 24 run playsound entity.generic.swim master @s ~ ~ ~ 1.5 0.6
 

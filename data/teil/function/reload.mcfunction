@@ -4,10 +4,9 @@ title @a times 0 20t 0
 # all scoreboard
 function teil:scoreboard
 
-# team
-team add NC
-team modify NC collisionRule never
-team join NC @a
+function teil:team
+
+
 
 # 殴りdamage(full charge)を10にする
 execute as @a run attribute @s minecraft:attack_damage base set 1.025

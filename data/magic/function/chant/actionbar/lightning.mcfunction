@@ -25,7 +25,7 @@ execute if score @s chant_time_rate matches 8..9 run particle dust{scale:1,color
 execute if score @s chant_time_rate matches 10 run particle dust{scale:1,color:[1.0,0.95,0.28]} ~ ~1 ~ 0.5 0.5 0.5 0 4
 
 
-execute if score @s chant_time matches 1 run playsound entity.player.hurt_on_fire master @s ~ ~ ~ 1 0.4
+execute if score @s chant_time matches 2 run playsound entity.player.hurt_on_fire master @s ~ ~ ~ 1 0.4
 execute if score @s chant_time matches 20 run playsound entity.player.hurt_on_fire master @s ~ ~ ~ 1.2 0.45
 execute if score @s chant_time matches 39 run playsound entity.player.hurt_on_fire master @s ~ ~ ~ 1.5 0.5
 

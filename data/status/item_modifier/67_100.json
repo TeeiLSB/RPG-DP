@@ -8,10 +8,6 @@
     "entity": "this",
     "name": [
       {
-        "nbt": "hp.color",
-        "storage": "lib:"
-      },
-      {
         "nbt": "hp.name",
         "storage": "lib:"
       },

@@ -1,5 +1,5 @@
 
-scoreboard players operation @s mgcdmg = @s maxmp
+scoreboard players operation @s mgcdmg = @s mp
 
 
 

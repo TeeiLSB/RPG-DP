@@ -6,3 +6,6 @@ execute as @e[tag=mobs] at @s run function mob:main/death
 
 
 execute as @e[type=!player,tag=mobs] at @s run function mob:mob_action/list
+
+# glow
+execute as @e[tag=mobs] run function effect:glow/glow

@@ -8,9 +8,10 @@ scoreboard players set @s mp 200
 
 effect give @s instant_damage infinite 252 true
 
+# execute on vehicle run function mob:main/killtp
 
 tag @s add Name.Husk_Warrior
-tag @s add Rank.C
+team join Rank.C
 
 data merge entity @s {CustomNameVisible:1b,IsBaby:0b}
 

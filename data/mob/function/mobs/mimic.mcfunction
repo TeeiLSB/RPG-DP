@@ -1,7 +1,7 @@
 scoreboard players set @s maxhealth 100
 scoreboard players set @s health 100
 scoreboard players set @s prehp 100
-scoreboard players set @s atkdmg 50
+scoreboard players set @s atkdmg 75
 scoreboard players set @s defense 0
 scoreboard players set @s maxmp 100
 scoreboard players set @s mp 100
@@ -10,7 +10,9 @@ effect give @s instant_damage infinite 252 true
 effect give @s invisibility infinite 1 true
 
 tag @s add Name.Mimic
-tag @s add Rank.D
+team join Rank.C
+
+execute on vehicle run function mob:main/killtp
 
 item replace entity @s saddle with glass_bottle[minecraft:equippable={slot:"saddle"}]
 item replace entity @s weapon.mainhand with glass_bottle
@@ -27,7 +29,7 @@ execute as @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{mimic_di
 
 
 
-attribute @s scale base set 1
+attribute @s movement_speed base set 0.2
 
 
 tag @s add mobs

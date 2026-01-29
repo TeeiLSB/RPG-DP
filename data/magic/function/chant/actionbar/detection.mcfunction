@@ -23,7 +23,7 @@ execute if score @s chant_time_rate matches 5..7 run particle dust{scale:1,color
 execute if score @s chant_time_rate matches 8..9 run particle dust{scale:1,color:[1.0,1.0,1.0]} ~ ~1 ~ 0.5 0.5 0.5 0 3
 execute if score @s chant_time_rate matches 10 run particle dust{scale:1,color:[1.0,1.0,1.0]} ~ ~1 ~ 0.5 0.5 0.5 0 4
 
-execute if score @s chant_time matches 1 run playsound minecraft:block.amethyst_cluster.place master @s ~ ~ ~ 1 1
+execute if score @s chant_time matches 2 run playsound minecraft:block.amethyst_cluster.place master @s ~ ~ ~ 1 1
 execute if score @s chant_time matches 10 run playsound minecraft:block.amethyst_cluster.place master @s ~ ~ ~ 1.2 1.2
 execute if score @s chant_time matches 19 run playsound minecraft:block.amethyst_cluster.place master @s ~ ~ ~ 1.5 2
 

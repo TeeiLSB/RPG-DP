@@ -136,3 +136,6 @@ function number:constant
 # dungeon
 scoreboard objectives add dungeon.joinend.sand dummy
 
+# glow
+scoreboard objectives add glow dummy
+

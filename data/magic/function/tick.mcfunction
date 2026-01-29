@@ -1,4 +1,7 @@
+# execute if score @s magic_prog matches 1 run say hi
 
+
+execute if entity @s[tag=NoChant] if score @s reqmp <= @s mp run scoreboard players set @s magic_prog 1
 
 execute as @e[tag=magic_marker] at @s run function magic:cast/fire/shoot
 

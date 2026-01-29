@@ -9,6 +9,7 @@ scoreboard players set @s mp 200
 effect give @s instant_damage infinite 252 true
 effect give @s water_breathing infinite 255 true
 
+execute on vehicle run function mob:main/killtp
 
 tag @s add Name.dolrider
 tag @s add Rank.C
