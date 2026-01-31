@@ -1,0 +1,532 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "======= ステータス =======",
+      "color": "yellow",
+      "italic": false
+    },
+    "target": "item_name"
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "Health ",
+        "extra": [
+          {
+            "score": {
+              "objective": "HP",
+              "name": "@s"
+            },
+            "extra": [
+              {
+                "text": ".",
+                "extra": [
+                  {
+                    "score": {
+                      "objective": "hpdec",
+                      "name": "@s"
+                    },
+                    "extra": [
+                      {
+                        "text": "/",
+                        "extra": [
+                          {
+                            "score": {
+                              "objective": "maxhpdisplay",
+                              "name": "@s"
+                            },
+                            "color": "red",
+                            "italic": false
+                          }
+                        ],
+                        "color": "red",
+                        "italic": false
+                      }
+                    ],
+                    "color": "red",
+                    "italic": false
+                  }
+                ],
+                "color": "red",
+                "italic": false
+              }
+            ],
+            "color": "red",
+            "italic": false
+          }
+        ],
+        "color": "red",
+        "italic": false
+      },
+      {
+        "text": "Magic Power ",
+        "extra": [
+          {
+            "score": {
+              "objective": "mpdisplay",
+              "name": "@s"
+            },
+            "extra": [
+              {
+                "text": ".",
+                "extra": [
+                  {
+                    "score": {
+                      "objective": "mpdec",
+                      "name": "@s"
+                    },
+                    "extra": [
+                      {
+                        "text": "/",
+                        "extra": [
+                          {
+                            "score": {
+                              "objective": "maxmpdisplay",
+                              "name": "@s"
+                            },
+                            "extra": [
+                              {
+                                "text": "   (",
+                                "extra": [
+                                  {
+                                    "text": "+",
+                                    "extra": [
+                                      {
+                                        "score": {
+                                          "objective": "mpregen_display",
+                                          "name": "@s"
+                                        },
+                                        "extra": [
+                                          {
+                                            "text": ".",
+                                            "color": "aqua",
+                                            "italic": false
+                                          },
+                                          {
+                                            "score": {
+                                              "objective": "mpregen_dec",
+                                              "name": "@s"
+                                            },
+                                            "color": "aqua",
+                                            "italic": false
+                                          },
+                                          {
+                                            "text": "/s)",
+                                            "color": "gray",
+                                            "italic": false
+                                          }
+                                        ],
+                                        "color": "aqua",
+                                        "italic": false
+                                      }
+                                    ],
+                                    "color": "green",
+                                    "italic": false
+                                  }
+                                ],
+                                "color": "gray",
+                                "italic": false
+                              }
+                            ],
+                            "color": "aqua",
+                            "italic": false
+                          }
+                        ],
+                        "color": "aqua",
+                        "italic": false
+                      }
+                    ],
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ],
+                "color": "aqua",
+                "italic": false
+              }
+            ],
+            "color": "aqua",
+            "italic": false
+          }
+        ],
+        "color": "aqua",
+        "italic": false
+      },
+      {
+        "text": "Defense ",
+        "extra": [
+          {
+            "score": {
+              "objective": "defense",
+              "name": "@s"
+            },
+            "extra": [
+              {
+                "text": "%",
+                "color": "gray",
+                "italic": false
+              }
+            ],
+            "color": "white",
+            "italic": false
+          }
+        ],
+        "color": "white",
+        "italic": false
+      },
+      {
+        "text": "Attack Damge ",
+        "extra": [
+          {
+            "score": {
+              "objective": "atkdmg_calced_display",
+              "name": "@s"
+            },
+            "extra": [
+              {
+                "text": ".",
+                "extra": [
+                  {
+                    "score": {
+                      "objective": "atkdmg_calced_display_dec",
+                      "name": "@s"
+                    },
+                    "color": "gold",
+                    "italic": false
+                  }
+                ],
+                "color": "gold",
+                "italic": false
+              },
+              {
+                "text": " (",
+                "extra": [
+                  {
+                    "score": {
+                      "objective": "atkdmg_display",
+                      "name": "@s"
+                    },
+                    "extra": [
+                      {
+                        "text": ".",
+                        "extra": [
+                          {
+                            "score": {
+                              "objective": "atkdmg_display_dec",
+                              "name": "@s"
+                            },
+                            "color": "yellow",
+                            "italic": false
+                          }
+                        ],
+                        "color": "yellow",
+                        "italic": false
+                      },
+                      {
+                        "text": "x",
+                        "extra": [
+                          {
+                            "score": {
+                              "objective": "atkdmg_multi_display",
+                              "name": "@s"
+                            },
+                            "extra": [
+                              {
+                                "text": ".",
+                                "extra": [
+                                  {
+                                    "score": {
+                                      "objective": "atkdmg_multi_display_dec",
+                                      "name": "@s"
+                                    },
+                                    "color": "red",
+                                    "italic": false
+                                  }
+                                ],
+                                "color": "red",
+                                "italic": false
+                              },
+                              {
+                                "text": ")",
+                                "color": "gray",
+                                "italic": false
+                              }
+                            ],
+                            "color": "red",
+                            "italic": false
+                          }
+                        ],
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ],
+                    "color": "yellow",
+                    "italic": false
+                  }
+                ],
+                "color": "gray",
+                "italic": false
+              }
+            ],
+            "color": "gold",
+            "italic": false
+          }
+        ],
+        "color": "yellow",
+        "italic": false
+      },
+      {
+        "text": "Magic Damge ",
+        "extra": [
+          {
+            "score": {
+              "objective": "mgcdmg_calced_display",
+              "name": "@s"
+            },
+            "extra": [
+              {
+                "text": ".",
+                "extra": [
+                  {
+                    "score": {
+                      "objective": "mgcdmg_calced_display_dec",
+                      "name": "@s"
+                    },
+                    "color": "dark_aqua",
+                    "italic": false
+                  }
+                ],
+                "color": "dark_aqua",
+                "italic": false
+              },
+              {
+                "text": " (",
+                "extra": [
+                  {
+                    "score": {
+                      "objective": "mgcdmg_display",
+                      "name": "@s"
+                    },
+                    "extra": [
+                      {
+                        "text": ".",
+                        "extra": [
+                          {
+                            "score": {
+                              "objective": "mgcdmg_display_dec",
+                              "name": "@s"
+                            },
+                            "color": "aqua",
+                            "italic": false
+                          }
+                        ],
+                        "color": "aqua",
+                        "italic": false
+                      },
+                      {
+                        "text": "x",
+                        "extra": [
+                          {
+                            "score": {
+                              "objective": "mgcdmg_multi_display",
+                              "name": "@s"
+                            },
+                            "extra": [
+                              {
+                                "text": ".",
+                                "extra": [
+                                  {
+                                    "score": {
+                                      "objective": "mgcdmg_multi_display_dec",
+                                      "name": "@s"
+                                    },
+                                    "color": "blue",
+                                    "italic": false
+                                  }
+                                ],
+                                "color": "blue",
+                                "italic": false
+                              },
+                              {
+                                "text": ")",
+                                "color": "gray",
+                                "italic": false
+                              }
+                            ],
+                            "color": "blue",
+                            "italic": false
+                          }
+                        ],
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ],
+                    "color": "aqua",
+                    "italic": false
+                  }
+                ],
+                "color": "gray",
+                "italic": false
+              }
+            ],
+            "color": "dark_aqua",
+            "italic": false
+          }
+        ],
+        "color": "aqua",
+        "italic": false
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "Sword Level ",
+        "extra": [
+          {
+            "score": {
+              "objective": "sword_level",
+              "name": "@s"
+            },
+            "extra": [
+              {
+                "text": "  (",
+                "extra": [
+                  {
+                    "score": {
+                      "objective": "sword_level_current_xp",
+                      "name": "@s"
+                    },
+                    "extra": [
+                      {
+                        "text": "/",
+                        "extra": [
+                          {
+                            "score": {
+                              "objective": "sword_level_needed_xp",
+                              "name": "@s"
+                            },
+                            "extra": [
+                              {
+                                "text": ") ",
+                                "extra": [
+                                  {
+                                    "score": {
+                                      "objective": "sword_level_percent",
+                                      "name": "@s"
+                                    },
+                                    "extra": [
+                                      {
+                                        "text": "%",
+                                        "color": "gray"
+                                      }
+                                    ],
+                                    "color": "yellow",
+                                    "italic": false
+                                  }
+                                ],
+                                "color": "gray",
+                                "italic": false
+                              }
+                            ],
+                            "color": "gray",
+                            "italic": false
+                          }
+                        ],
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ],
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                "color": "gray",
+                "italic": false
+              }
+            ],
+            "color": "yellow",
+            "italic": false
+          }
+        ],
+        "color": "gold",
+        "italic": false
+      },
+      {
+        "text": "Magic Level ",
+        "extra": [
+          {
+            "score": {
+              "objective": "magic_level",
+              "name": "@s"
+            },
+            "extra": [
+              {
+                "text": "  (",
+                "extra": [
+                  {
+                    "score": {
+                      "objective": "magic_level_current_xp",
+                      "name": "@s"
+                    },
+                    "extra": [
+                      {
+                        "text": "/",
+                        "extra": [
+                          {
+                            "score": {
+                              "objective": "magic_level_needed_xp",
+                              "name": "@s"
+                            },
+                            "extra": [
+                              {
+                                "text": ") ",
+                                "extra": [
+                                  {
+                                    "score": {
+                                      "objective": "magic_level_percent",
+                                      "name": "@s"
+                                    },
+                                    "extra": [
+                                      {
+                                        "text": "%",
+                                        "color": "gray"
+                                      }
+                                    ],
+                                    "color": "yellow",
+                                    "italic": false
+                                  }
+                                ],
+                                "color": "gray",
+                                "italic": false
+                              }
+                            ],
+                            "color": "gray",
+                            "italic": false
+                          }
+                        ],
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ],
+                    "color": "green",
+                    "italic": false
+                  }
+                ],
+                "color": "gray",
+                "italic": false
+              }
+            ],
+            "color": "aqua",
+            "italic": false
+          }
+        ],
+        "color": "dark_aqua",
+        "italic": false
+      }
+    ],
+    "mode": "replace_all"
+  }
+]

@@ -33,6 +33,7 @@ execute as @a at @s run function status:attackdamage/dataget
 
 
 
+
 # mp
 
 execute as @a at @s run function status:magicpower/calc

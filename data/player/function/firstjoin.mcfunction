@@ -13,3 +13,8 @@ execute unless score @s mpregen_speed matches 0.. run scoreboard players set @s 
 execute unless score @s cd_throw_sword matches 0.. run scoreboard players set @s cd_throw_sword 0
 
 
+# level
+execute unless score @s sword_level_all_xp matches 0.. run scoreboard players set @s sword_level_all_xp 0
+
+
+

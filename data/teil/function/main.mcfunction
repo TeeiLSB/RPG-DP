@@ -45,6 +45,9 @@ execute as @a at @s run function quest:tick
 
 function dungeon:sand/tick
 
+function leveling:reload
+function leveling:tick
+
 
 
 

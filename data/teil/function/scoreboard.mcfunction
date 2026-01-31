@@ -52,6 +52,15 @@ scoreboard objectives add atkdmg dummy
 scoreboard objectives add dmgtemp dummy
 scoreboard objectives add mobatk dummy
 scoreboard objectives add mobdmgtemp dummy
+scoreboard objectives add atkdmg_multi dummy
+
+scoreboard objectives add atkdmg_calced_display dummy
+scoreboard objectives add atkdmg_display dummy
+scoreboard objectives add atkdmg_multi_display dummy
+
+scoreboard objectives add atkdmg_calced_display_dec dummy
+scoreboard objectives add atkdmg_display_dec dummy
+scoreboard objectives add atkdmg_multi_display_dec dummy
 
 # fire damage
 scoreboard objectives add Fire_Duration dummy
@@ -59,6 +68,15 @@ scoreboard objectives add Fire_Duration dummy
 
 # mgcdmg
 scoreboard objectives add mgcdmg dummy
+scoreboard objectives add mgcdmg_multi dummy
+
+scoreboard objectives add mgcdmg_calced_display dummy
+scoreboard objectives add mgcdmg_display dummy
+scoreboard objectives add mgcdmg_multi_display dummy
+
+scoreboard objectives add mgcdmg_calced_display_dec dummy
+scoreboard objectives add mgcdmg_display_dec dummy
+scoreboard objectives add mgcdmg_multi_display_dec dummy
 
 # mp
 scoreboard objectives add mp dummy
@@ -72,6 +90,9 @@ scoreboard objectives add mpregen_speed dummy
 scoreboard objectives add mpremoved dummy
 
 scoreboard objectives add reqmp dummy
+
+scoreboard objectives add mpregen_display dummy
+scoreboard objectives add mpregen_dec dummy
 
 # defense
 scoreboard objectives add defense dummy
@@ -138,4 +159,5 @@ scoreboard objectives add dungeon.joinend.sand dummy
 
 # glow
 scoreboard objectives add glow dummy
+
 

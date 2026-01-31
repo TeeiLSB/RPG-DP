@@ -45,6 +45,8 @@ execute if score @s damage matches ..10 run tag @n[type=!player,scores={HurtTime
 
 
 
+
+
 # title @s title ""
 # tellraw @s [{"score":{"name":"@s","objective":"dmgtemp"}}]
 
