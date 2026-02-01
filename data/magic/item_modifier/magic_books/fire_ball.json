@@ -43,6 +43,25 @@
         "italic": false
       },
       {
+        "text": "ダメージ",
+        "extra": [
+          {
+            "text": ": ",
+            "extra": [
+              {
+                "text": "3",
+                "color": "yellow",
+                "italic": false
+              }
+            ],
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "color": "gray",
+        "italic": false
+      },
+      {
         "text": ""
       },
       {

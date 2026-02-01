@@ -42,3 +42,13 @@ scoreboard players operation @s atkdmg_multi += #tmp Temporary
 
 scoreboard players reset #tmp Temporary
 
+
+
+# sword threw cd
+scoreboard players set @s throw_sword 200
+scoreboard players operation #throw_sword Temporary = @s sword_level
+
+scoreboard players operation @s throw_sword -= #throw_sword Temporary
+
+scoreboard players reset #throw_sword Temporary
+

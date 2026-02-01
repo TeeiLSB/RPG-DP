@@ -9,3 +9,9 @@ execute as @e[type=!player,tag=mobs] at @s run function mob:mob_action/list
 
 # glow
 execute as @e[tag=mobs] run function effect:glow/glow
+
+
+
+
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{xp_dsp:1}}}}] at @s run tp @s ~ ~ ~
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{xp_dsp:2}}}}] at @s run tp @s ~ ~ ~

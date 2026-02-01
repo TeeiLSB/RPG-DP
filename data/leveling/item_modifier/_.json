@@ -343,6 +343,40 @@
                                       "objective": "mgcdmg_multi_display_dec",
                                       "name": "@s"
                                     },
+                                    "extra": [
+                                      {
+                                        "text": "x",
+                                        "extra": [
+                                          {
+                                            "score": {
+                                              "objective": "magicbook_damage_display",
+                                              "name": "@s"
+                                            },
+                                            "extra": [
+                                              {
+                                                "text": ".",
+                                                "extra": [
+                                                  {
+                                                    "score": {
+                                                      "objective": "magicbook_damage_dec",
+                                                      "name": "@s"
+                                                    },
+                                                    "color": "yellow",
+                                                    "italic": false
+                                                  }
+                                                ],
+                                                "color": "yellow",
+                                                "italic": false
+                                              }
+                                            ],
+                                            "color": "yellow",
+                                            "italic": false
+                                          }
+                                        ],
+                                        "color": "gray",
+                                        "italic": false
+                                      }
+                                    ],
                                     "color": "blue",
                                     "italic": false
                                   }

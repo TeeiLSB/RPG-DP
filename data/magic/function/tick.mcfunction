@@ -1,5 +1,5 @@
-# execute if score @s magic_prog matches 1 run say hi
 
+scoreboard players set @s magicbook_damage 0
 
 execute if entity @s[tag=NoChant] if score @s reqmp <= @s mp run scoreboard players set @s magic_prog 1
 
@@ -24,9 +24,6 @@ function magic:element/ui4
 function magic:element/clear_items
 
 
-# magic staff
-# execute if predicate hasitem:magic_staff run function magic:magic_staff_select/summon
-execute unless predicate hasitem:magic_staff run execute positioned ~ ~1 ~ as @n[type=interaction,tag=magic_select] if score @s interaction_player_id = @p player_id at @s run function mob:main/killtp
 
 function magic:regen/regen
 

@@ -9,5 +9,4 @@ particle dust{scale:1,color:[1.0,0.73,0.0]} ~ ~ ~ 0.15 0.15 0.15 0.01 1
 particle dust{scale:2,color:[1.0,0.5,0.0]} ~ ~ ~ 0.3 0.25 0.15 0.05 1
 
 
-
 tp @s ^ ^ ^0.25

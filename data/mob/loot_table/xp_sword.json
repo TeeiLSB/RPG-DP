@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "glass_bottle",
+          "functions": [
+            {
+              "function": "set_custom_data",
+              "tag": "{xp_dsp:1}"
+            },
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": " +",
+                  "color": "gold"
+                },
+                {
+                  "nbt": "sword.value",
+                  "storage": "lib:",
+                  "color": "gold"
+                },
+                {
+                  "text": " xp",
+                  "color": "green"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

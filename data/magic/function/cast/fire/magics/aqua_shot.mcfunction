@@ -16,6 +16,8 @@ execute at @s anchored eyes positioned ^ ^ ^1.25 positioned ~-0.125 ~-0.125 ~-0.
                 execute at @s anchored eyes positioned ^ ^ ^1.25 positioned ~-0.125 ~-0.125 ~-0.125 run \
                     scoreboard players operation @n[tag=aqua_shot,tag=magic_marker] mgcdmg = @s mgcdmg
 
+                        execute at @s anchored eyes positioned ^ ^ ^1.25 positioned ~-0.125 ~-0.125 ~-0.125 run \
+                            scoreboard players operation @n[tag=aqua_shot,tag=magic_marker] player_id = @s player_id
 
 
 scoreboard players set @s chant_time 0

@@ -3,8 +3,8 @@ execute as @a at @s if score @s health <= @s maxhealth run function item_cooldow
 execute as @a at @s if score @s health > @s maxhealth run function item_cooldown:actionbar_test3
 
 
-# execute as @a at @s if score @s has_ability matches 1 if score @s health <= @s maxhealth run function item_cooldown:actionbar2
-# execute as @a at @s if score @s has_ability matches 1 if score @s health > @s maxhealth run function item_cooldown:actionbar1
+# execute as @a at @s if score @s has_ability matches 1 run function item_cooldown:actionbar1
+
 
 
 

@@ -78,6 +78,10 @@ scoreboard objectives add mgcdmg_calced_display_dec dummy
 scoreboard objectives add mgcdmg_display_dec dummy
 scoreboard objectives add mgcdmg_multi_display_dec dummy
 
+scoreboard objectives add magicbook_damage dummy
+scoreboard objectives add magicbook_damage_display dummy
+scoreboard objectives add magicbook_damage_dec dummy
+
 # mp
 scoreboard objectives add mp dummy
 scoreboard objectives add mpdisplay dummy

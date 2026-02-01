@@ -3,6 +3,8 @@ title @s title ""
 # mpの消費量を設定
 scoreboard players operation @s reqmp = #50 Constant
 
+scoreboard players set @s magicbook_damage 15
+
 execute unless score @s reqmp <= @s mp if score @s chant_time_rate matches 0 if score @s magic_prog matches 0 run title @s subtitle [{"text":"aqua shot","color":"dark_gray",italic:false,"font":"minecraft:alt"}]
 execute if score @s reqmp <= @s mp if score @s chant_time_rate matches 0 run title @s subtitle [{"text":"aqua shot","color":"gray",italic:false,"font":"minecraft:alt"}]
 execute if score @s chant_time_rate matches 1 run title @s subtitle [{"text":"a","color":"blue",italic:false,"font":"minecraft:alt"},{"text":"qua shot","color":"gray",italic:false,"font":"minecraft:alt"}]

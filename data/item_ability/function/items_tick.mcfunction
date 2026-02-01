@@ -1,7 +1,7 @@
 # sword
 
-execute if score @s[scores={cd_throw_sword=0}] has_sword_skill matches 1 run function sword:trigger
-execute if score @s[scores={cd_backstep=0},nbt={OnGround:true}] has_sword_skill matches 2 run function sword:backstep
+execute if score @s[scores={cd_throw_sword=..0}] has_sword_skill matches 1 run function sword:trigger
+execute if score @s[scores={cd_backstep=..0},nbt={OnGround:true}] has_sword_skill matches 2 run function sword:backstep
 
 
 

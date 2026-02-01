@@ -37,6 +37,9 @@ scoreboard players operation #calc Temporary /= #10 Constant
 # 反映
 scoreboard players operation @s mgcdmg = #calc Temporary
 
+scoreboard players operation @s mgcdmg *= @s magicbook_damage
+scoreboard players operation @s mgcdmg /= #10 Constant
+
 # 後始末
 scoreboard players reset #calc Temporary
 scoreboard players reset #multi Temporary
@@ -56,6 +59,12 @@ scoreboard players operation @s mgcdmg_calced_display_dec = @s mgcdmg
 scoreboard players operation @s mgcdmg_calced_display_dec %= #10 Constant
 
 
+scoreboard players operation @s magicbook_damage_display = @s magicbook_damage
+scoreboard players operation @s magicbook_damage_display /= #10 Constant
+
+
+scoreboard players operation @s magicbook_damage_dec = @s magicbook_damage
+scoreboard players operation @s magicbook_damage_dec %= #10 Constant
 
 
 
