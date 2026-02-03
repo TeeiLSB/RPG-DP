@@ -6,6 +6,8 @@ scoreboard players set @s defense 0
 scoreboard players set @s maxmp 100
 scoreboard players set @s mp 100
 
+scoreboard players set @s mob_xp 20
+
 effect give @s instant_damage infinite 252 true
 effect give @s invisibility infinite 1 true
 

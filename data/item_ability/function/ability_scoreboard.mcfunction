@@ -1,10 +1,14 @@
-# throw sword
+# sword skill
 scoreboard objectives add cd_throw_sword dummy
 scoreboard objectives add has_sword_skill dummy
 scoreboard objectives add throw_sword dummy
 
 scoreboard objectives add backstep dummy
 scoreboard objectives add cd_backstep dummy
+
+scoreboard objectives add blockcounter dummy
+scoreboard objectives add cd_blockcounter dummy
+
 
 
 

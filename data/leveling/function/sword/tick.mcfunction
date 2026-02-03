@@ -52,3 +52,13 @@ scoreboard players operation @s throw_sword -= #throw_sword Temporary
 
 scoreboard players reset #throw_sword Temporary
 
+
+# sword blockcounter cd
+scoreboard players set @s blockcounter 200
+scoreboard players operation #blockcounter Temporary = @s sword_level
+
+scoreboard players operation @s blockcounter -= #blockcounter Temporary
+
+scoreboard players reset #blockcounter Temporary
+
+

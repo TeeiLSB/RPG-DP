@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "criteria": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:explorer_pottery_sherd"
+            }
+          }
+        },
+        "item": {
+          "components": {
+            "minecraft:custom_data": "{Sword_Skill:3,Damage:50,Sword:1,Ability:1,AbName:\"ブロックカウンター\"}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "sword:blockcounter/blocking"
+  }
+}

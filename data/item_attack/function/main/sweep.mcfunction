@@ -9,6 +9,7 @@ execute as @n[tag=mobs,scores={HurtTime=10}] at @s anchored eyes run particle sw
 
 execute as @e[tag=sword_sweep,tag=mobs] run attribute @s knockback_resistance base set 0.2
 execute as @e[tag=sword_sweep,tag=mobs] run tag @s add ReceiveSweep
+execute as @e[tag=sword_sweep,tag=mobs] run tag @s add ReceiveMelee
 execute as @e[tag=sword_sweep,tag=mobs] run damage @s 0.0001 player_attack by @p
 # execute as @e[tag=sword_sweep,tag=mobs] run effect give @s glowing 1 0 true
 

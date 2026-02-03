@@ -1,9 +1,7 @@
 tp @s 1004.0 1.0 1004.0
 
 
-execute positioned 1016 0 1016 run kill @e[type=marker,tag=sand.marker,distance=..50]
-execute positioned 1016 0 1016 run kill @e[tag=mobs,distance=..50]
-execute positioned 1016 0 1016 run kill @e[type=interaction,tag=mimic_interaction,distance=..50]
+execute positioned 1016 0 1016 run kill @e[type=!player,distance=..50]
 
 fill 1000 0 1000 1031 10 1031 air
 

@@ -11,5 +11,7 @@ scoreboard players operation @s defense += @s legs_defense
 scoreboard players operation @s defense += @s feet_defense
 scoreboard players operation @s defense += @s item_ability_defense
 
+execute if score @s defense matches 100.. run scoreboard players set @s defense 100
+
 
 

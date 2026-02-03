@@ -144,6 +144,7 @@ scoreboard objectives add rotate_prog dummy
 # sword
 scoreboard objectives add sword_skill_slot dummy
 scoreboard objectives add sneak_cd dummy
+scoreboard objectives add block_cd dummy
 
 # tick
 scoreboard objectives add tick dummy

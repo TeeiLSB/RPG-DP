@@ -14,3 +14,6 @@ scoreboard objectives add magic_level_needed_xp dummy
 scoreboard objectives add magic_level_percent dummy
 
 scoreboard objectives add magic_xp dummy
+
+
+scoreboard objectives add mob_xp dummy

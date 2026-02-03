@@ -26,7 +26,7 @@ execute on attacker run scoreboard players operation @s mgcdmg /= #3 Constant
 # 周囲のmob 2体までにダメージ処理
 execute on attacker run scoreboard players operation @e[tag=mobs,sort=nearest,distance=..4,scores={HurtTime=0},limit=2,tag=!lightning_exclude] health -= @s mgcdmg
 
-
+execute as @e[tag=mobs,sort=nearest,distance=..4,scores={HurtTime=0},limit=3] if score @s health matches ..0 on attacker run function magic:magic_hitted/killed_with_magic
 
 
 execute on attacker run function mob:main/killtp

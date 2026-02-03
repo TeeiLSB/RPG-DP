@@ -29,11 +29,14 @@ execute as @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:
 
 execute unless score @s prehp = @s health run scoreboard players operation @s prehp = @s health
 
+
 tag @s remove ReceiveCrit
 tag @s remove ReceiveNonCrit
 tag @s remove ReceiveSweep
-tag @s remove ReceiveMagic
 tag @s remove ReceiveFire
+
+execute if score @s health matches 1.. run tag @s remove ReceiveMelee
+execute if score @s health matches 1.. run tag @s remove ReceiveMagic
 
 data remove storage lib: dmg.value
 data remove storage lib: dmg.decvalue

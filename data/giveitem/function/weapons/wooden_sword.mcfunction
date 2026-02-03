@@ -9,7 +9,7 @@ give @s carrot_on_a_stick\
                                 [{"text":"攻撃速度 ","italic":false,"color":"yellow"},\
                                     {"text":"1.6","italic":false,"color":"green"}],\
                                     [{"text":""}],\
-                                    [{"text":"スニーク+右クリック ","italic":false,"color":"gold"},\
+                                    [{"text":"スニーク ","italic":false,"color":"gold"},\
                             {"text":"スキル切り替え","italic":false,"color":"aqua"}],\
                             [{"text":""}],\
                          [{"text":"右クリック ","italic":false,"color":"gold"},\
@@ -20,4 +20,4 @@ give @s carrot_on_a_stick\
                                 [{"text":"バックステップ ","italic":false,"color":"white"}],[{"text":"地面に足がついている時に","italic":false,"color":"gray"}],\
                                 [{"text":"後ろに跳び攻撃を回避する","italic":false,"color":"gray"}],\
                                 [{"text":""}]],\
-                                    custom_data={Sword_Skill:1,Damage:50,Sword:1,Ability:1,AbName:"投剣"}]
+                                    custom_data={Sword_Skill:1,Damage:50,Sword:1,Ability:1,AbName:"投げる"}]

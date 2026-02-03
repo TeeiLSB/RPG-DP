@@ -43,6 +43,8 @@ scoreboard players operation @n[type=!player,scores={HurtTime=10}] health -= @s 
 execute if score @s damage matches 11.. run tag @n[type=!player,scores={HurtTime=10}] add ReceiveCrit
 execute if score @s damage matches ..10 run tag @n[type=!player,scores={HurtTime=10}] add ReceiveNonCrit
 
+tag @n[type=!player,scores={HurtTime=10}] add ReceiveMelee
+
 
 
 
@@ -56,4 +58,6 @@ scoreboard players set @s damage 0
 
 execute as @a[scores={killed=1..}] at @s run scoreboard players set @s damage 0
 execute as @a[scores={killed=1..}] at @s run scoreboard players set @s killed 0
+
+function clicking:attacked_after
 

@@ -1,7 +1,7 @@
 
 scoreboard players set @s magicbook_damage 0
 
-execute if entity @s[tag=NoChant] if score @s reqmp <= @s mp run scoreboard players set @s magic_prog 1
+
 
 execute as @e[tag=magic_marker] at @s run function magic:cast/fire/shoot
 
@@ -13,7 +13,8 @@ scoreboard players operation @s chant_time_rate /= @s chant_max
 execute unless predicate hasitem:magic_staff run scoreboard players set @s chant_time 0
 execute unless predicate hasitem:magic_staff run scoreboard players set @s magic_prog 0
 
-
+execute if entity @s[tag=NoChant] if score @s reqmp <= @s mp run scoreboard players set @s magic_prog 2
+execute if entity @s[tag=NoChant] if score @s reqmp <= @s mp run scoreboard players set @s chant_time_rate 10
 
 
 function magic:element/ui1

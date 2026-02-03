@@ -5,8 +5,9 @@ scoreboard players set @s atkdmg 20
 scoreboard players set @s defense 0
 scoreboard players set @s maxmp 200
 scoreboard players set @s mp 200
-scoreboard players set @s sword_xp 1
-scoreboard players set @s magic_xp 5
+
+scoreboard players set @s mob_xp 2
+
 
 effect give @s instant_damage infinite 252 true
 

@@ -1,0 +1,27 @@
+[
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{Sword_Skill:3,Damage:50,Sword:1,Ability:1,AbName:\"ブロックカウンター\"}"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:consumable": {
+        "consume_seconds": 100000000000000000000,
+        "animation": "block",
+        "sound": "minecraft:intentionally_empty",
+        "has_consume_particles": false
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_item",
+    "item": "minecraft:explorer_pottery_sherd"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:item_model": "minecraft:wooden_sword"
+    }
+  }
+]
