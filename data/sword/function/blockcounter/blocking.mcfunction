@@ -3,3 +3,4 @@ execute if score @s cd_blockcounter matches 0 if score @s block_cd matches 1.. r
 
 advancement revoke @s only sword:block
 
+

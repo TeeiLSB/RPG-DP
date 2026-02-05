@@ -5,10 +5,13 @@ scoreboard players operation $Diff XPbar = @s defense
 scoreboard players operation $Diff XPbar *= #1000 XPbar
 scoreboard players operation $Diff XPbar /= #100 Constant
 scoreboard players operation $Diff XPbar -= $Points XPbar
-scoreboard players operation $Diff XPbar /= #10 XPbar
+scoreboard players operation $Diff XPbar /= #5 Constant
 scoreboard players operation $Points XPbar += $Diff XPbar
 
 xp set @s 0 points
+
+execute if score $Points XPbar matches 1024.. run xp add @s 1024 points
+execute if score $Points XPbar matches 1024.. run scoreboard players remove $Points XPbar 1024
 
 execute if score $Points XPbar matches 512.. run xp add @s 512 points
 execute if score $Points XPbar matches 512.. run scoreboard players remove $Points XPbar 512

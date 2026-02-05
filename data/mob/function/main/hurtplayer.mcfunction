@@ -25,6 +25,6 @@ scoreboard players reset @n[tag=attacker] mobatk
 scoreboard players reset @n[tag=attacker] mobdmgtemp
 execute on attacker run tag @s remove attacker
 
-execute if score @s block_cd matches 1.. if score @s cd_blockcounter matches 0 run function sword:blockcounter/damage_recived
+execute unless entity @s[tag=sword_blockcounter] if score @s block_cd matches 1.. if score @s cd_blockcounter matches 0 run function sword:blockcounter/damage_recived
 
 advancement revoke @s only mob:entity_hurt

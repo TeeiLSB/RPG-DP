@@ -10,7 +10,7 @@ execute as @a at @s if score @s health > @s maxhealth run function item_cooldown
 
 # execute as @a if score @s has_ability matches 0 run function item_cooldown:actionbar_test2
 
-
+execute as @a at @s run stopsound @s * entity.player.levelup
 execute as @a at @s run function status:defense/defense_display
 execute as @a at @s run stopsound @s * entity.player.levelup
 

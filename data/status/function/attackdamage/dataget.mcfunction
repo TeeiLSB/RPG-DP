@@ -26,6 +26,29 @@ scoreboard players operation @s atkdmg = #calc Temporary
 scoreboard players reset #calc Temporary
 scoreboard players reset #multi Temporary
 
+# multi = atkdmg_bonus (100 + Lv*10)
+scoreboard players operation #multi Temporary = @s atkdmg_bonus_multi
+
+# calc = atkdmg
+scoreboard players operation #calc Temporary = @s atkdmg
+
+# calc *= multi
+scoreboard players operation #calc Temporary *= #multi Temporary
+
+# calc /= 10  ← 最後に割る
+scoreboard players operation #calc Temporary /= #10 Constant
+
+# 反映
+scoreboard players operation @s atkdmg = #calc Temporary
+
+# 後始末
+scoreboard players reset #calc Temporary
+scoreboard players reset #multi Temporary
+
+# atkdmg_bonus_multi
+scoreboard players set @s atkdmg_bonus_multi 10
+scoreboard players operation @s atkdmg_bonus_multi += @s atkdmg_bonus_value
+
 
 scoreboard players operation @s atkdmg_multi_display = @s atkdmg_multi
 scoreboard players operation @s atkdmg_multi_display /= #10 Constant
@@ -39,3 +62,11 @@ scoreboard players operation @s atkdmg_multi_display_dec %= #10 Constant
 
 scoreboard players operation @s atkdmg_calced_display_dec = @s atkdmg
 scoreboard players operation @s atkdmg_calced_display_dec %= #10 Constant
+
+
+scoreboard players operation @s atkdmg_bonus_multi_display = @s atkdmg_bonus_multi
+scoreboard players operation @s atkdmg_bonus_multi_display /= #10 Constant
+
+
+scoreboard players operation @s atkdmg_bonus_multi_dec = @s atkdmg_bonus_multi
+scoreboard players operation @s atkdmg_bonus_multi_dec %= #10 Constant

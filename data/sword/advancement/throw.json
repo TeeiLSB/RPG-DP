@@ -6,7 +6,7 @@
         "player": {
           "slots": {
             "weapon.mainhand": {
-              "items": "minecraft:explorer_pottery_sherd"
+              "items": "minecraft:blade_pottery_sherd"
             }
           }
         }
@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "sword:blockcounter/blocking"
+    "function": "sword:trigger_check"
   }
 }

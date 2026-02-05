@@ -4,15 +4,10 @@ execute if score @s has_sword_skill matches 1 run scoreboard players operation @
 execute if score @s has_sword_skill matches 1 run scoreboard players operation @s cdpercent *= #100 Constant
 execute if score @s has_sword_skill matches 1 run scoreboard players operation @s cdpercent /= @s throw_sword
 
-# back step
-execute if score @s has_sword_skill matches 2 run scoreboard players operation @s cdpercent = @s cd_backstep
-execute if score @s has_sword_skill matches 2 run scoreboard players operation @s cdpercent *= #100 Constant
-execute if score @s has_sword_skill matches 2 run scoreboard players operation @s cdpercent /= @s backstep
-
 # block counter
-execute if score @s has_sword_skill matches 3 run scoreboard players operation @s cdpercent = @s cd_blockcounter
-execute if score @s has_sword_skill matches 3 run scoreboard players operation @s cdpercent *= #100 Constant
-execute if score @s has_sword_skill matches 3 run scoreboard players operation @s cdpercent /= @s blockcounter
+execute if score @s has_sword_skill matches 2 run scoreboard players operation @s cdpercent = @s cd_blockcounter
+execute if score @s has_sword_skill matches 2 run scoreboard players operation @s cdpercent *= #100 Constant
+execute if score @s has_sword_skill matches 2 run scoreboard players operation @s cdpercent /= @s blockcounter
 
 
 # golem_axe

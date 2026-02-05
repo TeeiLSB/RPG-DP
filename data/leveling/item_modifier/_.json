@@ -250,6 +250,38 @@
                                 "italic": false
                               },
                               {
+                                "text": "x",
+                                "extra": [
+                                  {
+                                    "score": {
+                                      "objective": "atkdmg_bonus_multi_display",
+                                      "name": "@s"
+                                    },
+                                    "extra": [
+                                      {
+                                        "text": ".",
+                                        "extra": [
+                                          {
+                                            "score": {
+                                              "objective": "atkdmg_bonus_multi_dec",
+                                              "name": "@s"
+                                            },
+                                            "color": "gold",
+                                            "italic": false
+                                          }
+                                        ],
+                                        "color": "gold",
+                                        "italic": false
+                                      }
+                                    ],
+                                    "color": "gold",
+                                    "italic": false
+                                  }
+                                ],
+                                "color": "gray",
+                                "italic": false
+                              },
+                              {
                                 "text": ")",
                                 "color": "gray",
                                 "italic": false

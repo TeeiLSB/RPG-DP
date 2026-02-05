@@ -1,6 +1,6 @@
 particle dust{color:[1,1,1],scale:2.5} ~ ~1 ~ 0.5 0.8 0.5 0.1 8
 
-summon item ~ ~ ~ {Item:{id:"gold_ingot",count:1}}
+# summon item ~ ~ ~ {Item:{id:"gold_ingot",count:1}}
 
 execute if entity @s[tag=ReceiveMelee] at @s on attacker run \
 scoreboard players operation @s sword_level_all_xp += @n[tag=mobs,distance=..0] sword_xp

@@ -1,6 +1,7 @@
 # レベル +1
 scoreboard players add @s sword_level 1
 
+
 # current_xp -= needed_xp
 scoreboard players operation @s sword_level_current_xp -= @s sword_level_needed_xp
 

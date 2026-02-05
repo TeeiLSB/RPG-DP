@@ -45,10 +45,11 @@ scoreboard players reset #tmp Temporary
 
 
 # sword threw cd
-scoreboard players set @s throw_sword 200
+scoreboard players set @s throw_sword 150
 scoreboard players operation #throw_sword Temporary = @s sword_level
 
 scoreboard players operation @s throw_sword -= #throw_sword Temporary
+execute if score @s throw_sword matches ..0 run scoreboard players set @s throw_sword 1
 
 scoreboard players reset #throw_sword Temporary
 
@@ -58,7 +59,15 @@ scoreboard players set @s blockcounter 200
 scoreboard players operation #blockcounter Temporary = @s sword_level
 
 scoreboard players operation @s blockcounter -= #blockcounter Temporary
+execute if score @s blockcounter matches ..0 run scoreboard players set @s blockcounter 1
 
 scoreboard players reset #blockcounter Temporary
+
+
+
+
+
+
+execute unless score @s sword_level matches 0 unless score @s prev_sword_level = @s sword_level run function leveling:sword/levelup_msg
 
 

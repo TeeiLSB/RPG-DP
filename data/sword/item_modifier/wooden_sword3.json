@@ -1,7 +1,7 @@
 [
   {
     "function": "minecraft:set_custom_data",
-    "tag": "{Sword_Skill:3,Damage:50,Sword:1,Ability:1,AbName:\"ブロックカウンター\"}"
+    "tag": "{Sword_Skill:2,Damage:50,Sword:1,Ability:1,AbName:\"ブロックカウンター\"}"
   },
   {
     "function": "minecraft:set_components",

@@ -1,4 +1,4 @@
-give @s carrot_on_a_stick\
+give @s blade_pottery_sherd\
     [minecraft:item_model=wooden_sword,\
         attribute_modifiers=[{type:attack_speed,amount:-2.4,slot:mainhand,operation:add_value,id:"1760485300217"}],\
             minecraft:item_name={"text":"木の剣","italic":false,"color":"white"},\
@@ -20,4 +20,4 @@ give @s carrot_on_a_stick\
                                 [{"text":"バックステップ ","italic":false,"color":"white"}],[{"text":"地面に足がついている時に","italic":false,"color":"gray"}],\
                                 [{"text":"後ろに跳び攻撃を回避する","italic":false,"color":"gray"}],\
                                 [{"text":""}]],\
-                                    custom_data={Sword_Skill:1,Damage:50,Sword:1,Ability:1,AbName:"投げる"}]
+                                    custom_data={Sword_Skill:1,Damage:50,Sword:1,Ability:1,AbName:"投剣"}]
