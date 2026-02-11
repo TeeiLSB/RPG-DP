@@ -56,7 +56,7 @@ execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] 
 
 
 
-execute as @e[type=armor_stand,tag=sword_armor_stand] at @s as @e[dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] if entity @s[scores={HurtTime=0},type=player] run function sword:hitted
+execute as @e[type=marker,tag=sword_marker] at @s as @e[dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] if entity @s[scores={HurtTime=0},type=player] run function sword:hitted
 
 
 execute if score @s mob_tick_count matches 145.. run scoreboard players set @s mob_tick_count 1

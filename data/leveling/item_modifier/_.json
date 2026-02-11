@@ -250,7 +250,7 @@
                                 "italic": false
                               },
                               {
-                                "text": "x",
+                                "text": "+",
                                 "extra": [
                                   {
                                     "score": {
@@ -259,16 +259,13 @@
                                     },
                                     "extra": [
                                       {
-                                        "text": ".",
-                                        "extra": [
-                                          {
-                                            "score": {
-                                              "objective": "atkdmg_bonus_multi_dec",
-                                              "name": "@s"
-                                            },
-                                            "color": "gold",
-                                            "italic": false
-                                          }
+                                        "text": "",
+                                            "extra": [
+                                              {
+                                                "text": "%",
+                                                "color": "gold",
+                                                "italic": false
+                                              }
                                         ],
                                         "color": "gold",
                                         "italic": false

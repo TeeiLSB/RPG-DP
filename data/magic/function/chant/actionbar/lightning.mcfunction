@@ -35,4 +35,5 @@ execute if score @s magic_prog matches 1 unless score @s mpremoved >= @s reqmp r
 execute if score @s magic_prog matches 1 unless score @s mpremoved >= @s reqmp run function magic:chant/actionbar/removeing_mp {"value":"1"}
 
 
-item modify entity @s weapon.mainhand magic:magic_staff_color/yellow
+execute if items entity @s weapon.mainhand burn_pottery_sherd[custom_data~{magic_staff:true}] \
+    run item modify entity @s weapon.mainhand {function: "set_custom_model_data",flags:{values:[0b,0b,0b,0b,1b],mode:"replace_all"}}

@@ -1,7 +1,7 @@
 playsound entity.zombie.attack_iron_door
 scoreboard players operation @s cd_blockcounter = @s blockcounter
 
-scoreboard players add @s atkdmg_bonus_value 10
+scoreboard players add @s atkdmg_bonus_value 100
 
 
 tag @s add sword_blockcounter

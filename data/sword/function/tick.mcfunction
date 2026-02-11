@@ -10,6 +10,11 @@ execute as @a at @s if score @s has_sword_skill matches 1.. run function sword:s
 execute as @e at @s if score @s has_sword_skill matches 1.. run function sword:blockcounter/tick
 
 
+execute as @a if score @s atkdmg_bonus_qtime matches 1.. run scoreboard players remove @s atkdmg_bonus_qtime 1
+execute as @a if score @s atkdmg_bonus_qtime matches 1 run scoreboard players add @s atkdmg_bonus_value 50
+
+
+
 
 
 

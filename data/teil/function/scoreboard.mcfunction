@@ -67,6 +67,8 @@ scoreboard objectives add atkdmg_bonus_value dummy
 scoreboard objectives add atkdmg_bonus_multi_display dummy
 scoreboard objectives add atkdmg_bonus_multi_dec dummy
 
+scoreboard objectives add atkdmg_bonus_qtime dummy
+
 # fire damage
 scoreboard objectives add Fire_Duration dummy
 

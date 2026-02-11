@@ -1,1 +1,24 @@
-give @s burn_pottery_sherd[minecraft:item_model=magic_staff,minecraft:item_name={"text":"木の杖","italic":false,"color":"white"},tooltip_display={hidden_components:[attribute_modifiers,"enchantments"]},lore=[[{"text":"最大魔力","italic":false,"color":"aqua"},{"text":" ","italic":false,"color":"dark_purple"},{"text":"+5","italic":false,"color":"green"}],[{"text":""}],[{"text":"左クリック","italic":false,"color":"gold"}],[{"text":"魔法スロットを切り替える","italic":false,"color":"gray"}],[{"text":" ","italic":false,"color":"gray"}],[{"text":"右クリック ","italic":false,"color":"gold"}],[{"text":"魔法を発動する","italic":false,"color":"gray"}]],enchantments={"magic:left_click":1},piercing_weapon={},consumable={sound:"intentionally_empty",has_consume_particles:false,consume_seconds:1000000},use_effects={can_sprint:true,speed_multiplier:1.0},enchantment_glint_override=false,custom_data={magic_staff:true,Reach:-10,mmax_mp:50},max_stack_size=1]
+give @s burn_pottery_sherd\
+    [item_model="custom/magic_staff/wood",minecraft:custom_model_data={flags:[1b]},\
+        minecraft:item_name=\
+            {"text":"木の杖","italic":false,"color":"white"},\
+                tooltip_display={hidden_components:[attribute_modifiers,"enchantments"]},\
+                    lore=[[{"text":"最大魔力","italic":false,"color":"aqua"},\
+                        {"text":" ","italic":false,"color":"dark_purple"},\
+                            {"text":"+5","italic":false,"color":"green"}],\
+                                [{"text":""}],\
+                                    [{"text":"左クリック","italic":false,"color":"gold"}],\
+                                        [{"text":"魔法スロットを切り替える","italic":false,"color":"gray"}],\
+                                            [{"text":" ","italic":false,"color":"gray"}],\
+                                                [{"text":"右クリック ","italic":false,"color":"gold"}],\
+                                                    [{"text":"魔法を発動する","italic":false,"color":"gray"}]],\
+                                                        enchantments=\
+                                                            {"magic:left_click":1},\
+                                                                piercing_weapon={},\
+                                                                    consumable=\
+                                                                        {sound:"intentionally_empty",has_consume_particles:false,consume_seconds:1000000},\
+                                                                            use_effects={can_sprint:true,speed_multiplier:1.0},\
+                                                                                enchantment_glint_override=false,\
+                                                                                    custom_data=\
+                                                                                    {magic_staff:true,Reach:-10,mmax_mp:50},\
+                                                                                        max_stack_size=1]

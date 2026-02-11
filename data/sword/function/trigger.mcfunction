@@ -12,6 +12,8 @@ execute at @s anchored eyes positioned ^ ^ ^1.25 positioned ~-0.125 ~-0.125 ~-0.
 execute at @s anchored eyes positioned ^ ^ ^1.25 positioned ~-0.125 ~-0.125 ~-0.125 summon interaction run function sword:interaction_setting
 execute at @s anchored eyes positioned ^ ^ ^1.25 positioned ~-0.125 ~-0.125 ~-0.125 summon interaction run function sword:interaction_setting2
 
+scoreboard players remove @s atkdmg_bonus_value 50
+scoreboard players set @s atkdmg_bonus_qtime 41
 
 
 scoreboard players operation @s cd_throw_sword = @s throw_sword

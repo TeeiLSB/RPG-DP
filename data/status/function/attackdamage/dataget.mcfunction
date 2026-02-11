@@ -26,24 +26,20 @@ scoreboard players operation @s atkdmg = #calc Temporary
 scoreboard players reset #calc Temporary
 scoreboard players reset #multi Temporary
 
-# multi = atkdmg_bonus (100 + Lv*10)
-scoreboard players operation #multi Temporary = @s atkdmg_bonus_multi
+#atkdmg bonus multiをatkdmgと同じにする
+scoreboard players operation @s atkdmg_bonus_multi = @s atkdmg
 
-# calc = atkdmg
-scoreboard players operation #calc Temporary = @s atkdmg
+# atkdmg bonus multiにatkdmg bonus VALUEで適切な値にする (x100)
+scoreboard players operation @s atkdmg_bonus_multi *= @s atkdmg_bonus_value
 
-# calc *= multi
-scoreboard players operation #calc Temporary *= #multi Temporary
+# /100する
+scoreboard players operation @s atkdmg_bonus_multi /= #100 Constant
 
-# calc /= 10  ← 最後に割る
-scoreboard players operation #calc Temporary /= #10 Constant
 
 # 反映
-scoreboard players operation @s atkdmg = #calc Temporary
+scoreboard players operation @s atkdmg += @s atkdmg_bonus_multi
 
-# 後始末
-scoreboard players reset #calc Temporary
-scoreboard players reset #multi Temporary
+
 
 # atkdmg_bonus_multi
 scoreboard players set @s atkdmg_bonus_multi 10
@@ -65,8 +61,5 @@ scoreboard players operation @s atkdmg_calced_display_dec %= #10 Constant
 
 
 scoreboard players operation @s atkdmg_bonus_multi_display = @s atkdmg_bonus_multi
-scoreboard players operation @s atkdmg_bonus_multi_display /= #10 Constant
+scoreboard players operation @s atkdmg_bonus_multi_display -= #10 Constant
 
-
-scoreboard players operation @s atkdmg_bonus_multi_dec = @s atkdmg_bonus_multi
-scoreboard players operation @s atkdmg_bonus_multi_dec %= #10 Constant
