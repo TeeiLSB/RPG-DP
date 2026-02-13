@@ -105,6 +105,8 @@ scoreboard objectives add reqmp dummy
 scoreboard objectives add mpregen_display dummy
 scoreboard objectives add mpregen_dec dummy
 
+scoreboard objectives add mp_bar dummy
+
 # defense
 scoreboard objectives add defense dummy
 scoreboard objectives add mainhand_defense dummy
@@ -172,4 +174,25 @@ scoreboard objectives add dungeon.joinend.sand dummy
 # glow
 scoreboard objectives add glow dummy
 
+# poison
+scoreboard objectives add poison_duration dummy
+scoreboard objectives add poison_value dummy
+
+# cant jump
+scoreboard objectives add cant_jump_duration dummy
+
+# slowness
+scoreboard objectives add slowness_duration dummy
+scoreboard objectives add slowness_value dummy
+
+# speed
+scoreboard objectives add speed dummy
+scoreboard objectives add mainhand_speed dummy
+scoreboard objectives add offhand_speed dummy
+scoreboard objectives add head_speed dummy
+scoreboard objectives add chest_speed dummy
+scoreboard objectives add legs_speed dummy
+scoreboard objectives add feet_speed dummy
+scoreboard objectives add bonus_speed dummy
+scoreboard objectives add debuff_speed dummy
 

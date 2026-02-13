@@ -1,4 +1,4 @@
-
+execute as @a at @s run function items:main/tick
 
 function player:join
 
@@ -10,6 +10,7 @@ execute as @a at @s run function status:health/death
 function sword:tick
 
 
+function bgm:tick
 
 
 execute as @a at @s run function player:firstjoin
@@ -31,14 +32,12 @@ function item_cooldown:tick
 
 function status:tick
 
-execute as @a at @s run function items:main/tick
-
 
 
 scoreboard players add $Tick tick 1
 execute if score $Tick tick matches 21 run scoreboard players set $Tick tick 1
 
-function effect:fire/fire_tick
+function effect:tick
 
 execute as @a at @s run function quest:tick
 

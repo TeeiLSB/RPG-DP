@@ -1,5 +1,6 @@
 
-
+# speed
+execute as @a at @s run function status:speed/tick
 
 
 execute as @a if entity @s[tag=add100def] run function status:defense/test
