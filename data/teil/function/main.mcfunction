@@ -28,7 +28,7 @@ execute as @a at @s run function clicking:tick
 function item_ability:tick
 function item_cooldown:tick
 
-
+function ui:tick
 
 function status:tick
 

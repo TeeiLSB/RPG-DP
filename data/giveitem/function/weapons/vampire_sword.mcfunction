@@ -27,4 +27,4 @@ give @s carrot_on_a_stick\
                             {"text":"0","italic":false,"color":"red"},\
                                 {"text":" / ","italic":false,"color":"gray"},\
                                     {"text":"0 ","italic":false,"color":"dark_gray"}]],\
-                                        custom_data={Ability:1,Damage:100,AbName:"アブソープション",Sword:1}]
+                                        custom_data={Ability:1,matkdmg:100,AbName:"アブソープション",Sword:1}]

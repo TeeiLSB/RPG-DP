@@ -36,7 +36,11 @@ scoreboard objectives add dmgdsp dummy
 scoreboard objectives add dmgdecdsp dummy
 scoreboard objectives add hpdisplay dummy
 
+# coin
+scoreboard objectives add coin dummy
 
+# ui
+scoreboard objectives add UI dummy
 
 # absorb
 scoreboard objectives add absorb dummy
@@ -68,6 +72,14 @@ scoreboard objectives add atkdmg_bonus_multi_display dummy
 scoreboard objectives add atkdmg_bonus_multi_dec dummy
 
 scoreboard objectives add atkdmg_bonus_qtime dummy
+
+scoreboard objectives add mainhand_atkdmg dummy
+scoreboard objectives add offhand_atkdmg dummy
+scoreboard objectives add head_atkdmg dummy
+scoreboard objectives add chest_atkdmg dummy
+scoreboard objectives add legs_atkdmg dummy
+scoreboard objectives add feet_atkdmg dummy
+
 
 # fire damage
 scoreboard objectives add Fire_Duration dummy

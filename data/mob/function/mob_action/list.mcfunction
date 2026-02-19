@@ -1,2 +1,2 @@
-execute if entity @p[distance=..30,tag=player] if entity @s[tag=Name.Husk_Warrior] run function mob:mob_action/enemys/husk_warrior/husk_warrior
-execute if entity @p[distance=..60,tag=player] if entity @s[tag=Name.Spider_King] run function mob:mob_action/boss/spider_king/king_spider
+execute if entity @p[distance=..30,tag=player] if entity @s[tag=Name.Husk_Warrior] as @s at @s run function mob:mob_action/enemys/husk_warrior/husk_warrior
+execute if entity @p[distance=..60,tag=player] if entity @s[tag=Name.Spider_King] as @s at @s run function mob:mob_action/boss/spider_king/king_spider

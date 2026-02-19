@@ -7,6 +7,10 @@ function teil:scoreboard
 function teil:team
 
 
+# diff
+difficulty easy
+
+
 
 # 殴りdamage(full charge)を10にする
 execute as @a run attribute @s minecraft:attack_damage base set 1.025

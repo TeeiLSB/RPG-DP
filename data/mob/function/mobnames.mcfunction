@@ -11,4 +11,5 @@ execute if entity @s[tag=Name.CaveSpider] run data modify storage lib: hp.name s
 execute if entity @s[tag=Name.Husk_Warrior] run data modify storage lib: hp.name set value "ハスクウォーリアー"
 execute if entity @s[tag=Name.Mimic] run data modify storage lib: hp.name set value "ミミック"
 execute if entity @s[tag=Name.Spider_King] run data modify storage lib: hp.name set value "スパイダーキング"
+execute if entity @s[tag=Name.Spider_Children] run data modify storage lib: hp.name set value "スパイダーチルドレン"
 

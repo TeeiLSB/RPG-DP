@@ -21,6 +21,6 @@ give @s blade_pottery_sherd\
                                 [{"text":"ブロックカウンター ","italic":false,"color":"white"}],[{"text":"剣を構えてダメージを受けた時に","italic":false,"color":"gray"}],\
                                 [{"text":"攻撃力を+100%する","italic":false,"color":"gray"}],\
                                 [{"text":""}]],\
-                                    custom_data={Sword_Skill:1,Damage:40,Sword:1,Ability:1,AbName:"投剣"},\
+                                    custom_data={Sword_Skill:1,matkdmg:40,Sword:1,Ability:1,AbName:"投剣"},\
                                     consumable=\
                                         {"consume_seconds": 100000000,"animation": "none","sound": "minecraft:intentionally_empty","has_consume_particles": false}]

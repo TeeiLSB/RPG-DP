@@ -2,7 +2,7 @@
 scoreboard players set @s sword_level 0
 
 # 必要XP初期化（例：10）
-scoreboard players set @s sword_level_needed_xp 10
+scoreboard players set @s sword_level_needed_xp 50
 
 # 現在XP = 累計XP
 scoreboard players operation @s sword_level_current_xp = @s sword_level_all_xp

@@ -10,7 +10,7 @@ playsound minecraft:block.cobweb.step ambient @a ~ ~ ~ 1 0.25
 particle effect{color:[0.17,0.39,0.03]} ~ ~1 ~ 1.5 1 1.5 0.0001 20
 
 
-execute positioned ~ 0 ~ summon item_display run function mob:mob_action/boss/spider_king/web_ground
-scoreboard players add @a[distance=..4,sort=nearest,tag=player] poison_duration 81
+execute positioned ~ 0 ~ summon item_display run function mob:mob_action/boss/spider_king/web/web_ground
+scoreboard players add @a[distance=..5,sort=nearest,tag=player] poison_duration 23
 
 function mob:main/killtp

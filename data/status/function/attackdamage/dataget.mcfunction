@@ -1,5 +1,17 @@
-execute store result score @s atkdmg run data get entity @s SelectedItem.components.minecraft:custom_data.Damage
-execute unless items entity @s weapon.mainhand * run scoreboard players set @s atkdmg 1
+function status:attackdamage/get
+
+# reset
+scoreboard players set @s atkdmg 0
+
+# 全て足していく
+
+scoreboard players operation @s atkdmg += @s mainhand_atkdmg
+scoreboard players operation @s atkdmg += @s offhand_atkdmg
+scoreboard players operation @s atkdmg += @s head_atkdmg
+scoreboard players operation @s atkdmg += @s chest_atkdmg
+scoreboard players operation @s atkdmg += @s legs_atkdmg
+scoreboard players operation @s atkdmg += @s feet_atkdmg
+
 
 scoreboard players operation @s atkdmg_display = @s atkdmg
 scoreboard players operation @s atkdmg_display /= #10 Constant

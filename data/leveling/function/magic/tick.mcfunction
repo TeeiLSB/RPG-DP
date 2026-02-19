@@ -2,7 +2,7 @@
 scoreboard players set @s magic_level 0
 
 # 必要XP初期化（例：10）
-scoreboard players set @s magic_level_needed_xp 10
+scoreboard players set @s magic_level_needed_xp 50
 
 # 現在XP = 累計XP
 scoreboard players operation @s magic_level_current_xp = @s magic_level_all_xp

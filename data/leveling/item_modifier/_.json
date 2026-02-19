@@ -178,6 +178,28 @@
         "italic": false
       },
       {
+        "text": "Speed ",
+        "extra": [
+          {
+            "score": {
+              "objective": "speed",
+              "name": "@s"
+            },
+            "extra": [
+              {
+                "text": "%",
+                "color": "gray",
+                "italic": false
+              }
+            ],
+            "color": "white",
+            "italic": false
+          }
+        ],
+        "color": "#b3ffeb",
+        "italic": false
+      },
+      {
         "text": "Attack Damge ",
         "extra": [
           {
@@ -260,12 +282,12 @@
                                     "extra": [
                                       {
                                         "text": "",
-                                            "extra": [
-                                              {
-                                                "text": "%",
-                                                "color": "gold",
-                                                "italic": false
-                                              }
+                                        "extra": [
+                                          {
+                                            "text": "%",
+                                            "color": "gold",
+                                            "italic": false
+                                          }
                                         ],
                                         "color": "gold",
                                         "italic": false
