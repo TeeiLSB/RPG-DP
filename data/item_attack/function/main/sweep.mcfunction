@@ -16,7 +16,7 @@ execute as @e[tag=sword_sweep,tag=mobs] run damage @s 0.0001 player_attack by @p
 scoreboard players operation #sweep_temp atkdmg = @s atkdmg
 scoreboard players operation #sweep_temp atkdmg /= #10 Constant
 
-execute as @e[tag=sword_sweep,tag=mobs] run scoreboard players operation @s health -= #sweep_temp atkdmg
+execute as @e[tag=sword_sweep,tag=mobs] run scoreboard players operation @s mob.qdamage += #sweep_temp atkdmg
 
 scoreboard players reset #sweep_temp atkdmg
 

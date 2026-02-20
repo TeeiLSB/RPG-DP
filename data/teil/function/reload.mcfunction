@@ -23,6 +23,7 @@ function player:player_id/start
 
 function mob:reload
 
+function class:reload
 
 function magic:reload
 

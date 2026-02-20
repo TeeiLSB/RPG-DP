@@ -208,3 +208,5 @@ scoreboard objectives add feet_speed dummy
 scoreboard objectives add bonus_speed dummy
 scoreboard objectives add debuff_speed dummy
 
+
+# mobs

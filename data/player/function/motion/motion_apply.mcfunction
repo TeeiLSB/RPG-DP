@@ -1,4 +1,4 @@
-item replace entity @s saddle with glass_bottle[custom_data={motion_item:true},equippable={slot:saddle,equip_sound:"intentionally_empty"}]
+item replace entity @s saddle with glass[custom_data={motion_item:true},equippable={slot:saddle,equip_sound:"intentionally_empty"}]
 
 
 $item modify entity @s saddle {function:"set_enchantments",enchantments:\

@@ -32,7 +32,7 @@ function ui:tick
 
 function status:tick
 
-
+function class:tick
 
 scoreboard players add $Tick tick 1
 execute if score $Tick tick matches 21 run scoreboard players set $Tick tick 1
@@ -40,6 +40,8 @@ execute if score $Tick tick matches 21 run scoreboard players set $Tick tick 1
 function effect:tick
 
 execute as @a at @s run function quest:tick
+
+execute as @a run clear @s glass_bottle
 
 
 function dungeon:sand/tick

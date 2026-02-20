@@ -8,7 +8,7 @@ damage @s 1 minecraft:player_attack by @n[type=armor_stand,tag=fire_ball,tag=mag
 
 
 # 本体にダメージ処理
-execute on attacker run scoreboard players operation @n[tag=mobs,tag=fire_ball_exclude,scores={HurtTime=0}] health -= @s mgcdmg
+execute on attacker run scoreboard players operation @n[tag=mobs,tag=fire_ball_exclude,scores={HurtTime=0}] mob.qdamage += @s mgcdmg
 
 
 
@@ -19,7 +19,7 @@ execute on attacker run scoreboard players operation @s mgcdmg /= #2 Constant
 
 
 # 周囲のmob 4体までにダメージ処理
-execute on attacker run scoreboard players operation @e[tag=mobs,sort=nearest,distance=..2.5,scores={HurtTime=0},limit=4,tag=!fire_ball_exclude] health -= @s mgcdmg
+execute on attacker run scoreboard players operation @e[tag=mobs,sort=nearest,distance=..2.5,scores={HurtTime=0},limit=4,tag=!fire_ball_exclude] mob.qdamage += @s mgcdmg
 
 execute as @e[tag=mobs,sort=nearest,distance=..2.5,scores={HurtTime=0},limit=4] if score @s health matches ..0 on attacker run function magic:magic_hitted/killed_with_magic
 
