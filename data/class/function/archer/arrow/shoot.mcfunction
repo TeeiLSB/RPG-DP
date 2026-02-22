@@ -27,7 +27,7 @@ scoreboard players reset $Pitch Temporary
 
 
     tag @s add Shooter
-execute at @s anchored eyes positioned ^ ^ ^0.3 summon arrow run execute facing entity @s feet rotated ~180 ~ run function class:archer/arrow/motion
+execute positioned ~ ~1.52 ~ summon arrow run function class:archer/arrow/init
 
 
     tag @s remove Shooter

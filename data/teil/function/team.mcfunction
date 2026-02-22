@@ -4,6 +4,11 @@ team modify NC collisionRule never
 team join NC @a
 
 
+team add FF
+team modify FF friendlyFire false
+team join FF @a
+
+
 team add Rank.S
 team add Rank.A
 team add Rank.B
