@@ -1,11 +1,13 @@
 {
   "criteria": {
-    "criteria": {
+    "arrow": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-        "player": [],
-        "entity": {
-          "nbt": "{Tags:[\"mobs\"]}"
+        "damage": {
+          "type": {
+            "tags": [],
+            "is_direct": true
+          }
         }
       }
     }

@@ -1,4 +1,6 @@
-$data merge entity @s {item: {count: 1, id: "$(model)"}}
+$data merge entity @s {item: {count: 1, id: "iron_sword", components:{item_model:"$(model)"}}}
+
+
 data remove storage player: sword
 
 tag @s add sword_display

@@ -12,4 +12,5 @@ scoreboard players operation @s health -= $atk Temporary
 scoreboard players reset $atk Temporary
 scoreboard players reset $dmg Temporary
 
-scoreboard players set @s mob.qdamage 0
+
+scoreboard players reset @s mob.qdamage

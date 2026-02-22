@@ -2,7 +2,7 @@
 
 
 # sword
-execute as @s[scores={damage=9..,has_sword=1},predicate=item_attack:sweep] at @s run function item_attack:main/sweep
+execute as @s[scores={damage=9..},predicate=item_attack:sweep] if items entity @s weapon.mainhand *[custom_data~{Sword:1b}] at @s run function item_attack:main/sweep
 
 
 # golem axe

@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "criteria": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:blade_pottery_sherd"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "class:swordman/skill_right/trigger"
+  }
+}

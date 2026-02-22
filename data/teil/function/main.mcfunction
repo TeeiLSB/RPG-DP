@@ -1,5 +1,9 @@
 execute as @a at @s run function items:main/tick
 
+execute as @a at @s run function clicking:tick
+
+
+
 function player:join
 
 function player:gamemode/tick
@@ -23,8 +27,6 @@ function mob:tick
 function hasitem:tick
 execute as @a at @s run function magic:tick
 
-execute as @a at @s run function clicking:tick
-
 function item_ability:tick
 function item_cooldown:tick
 
@@ -41,7 +43,7 @@ function effect:tick
 
 execute as @a at @s run function quest:tick
 
-execute as @a run clear @s glass_bottle
+#execute as @a run clear @s glass_bottle
 
 
 function dungeon:sand/tick

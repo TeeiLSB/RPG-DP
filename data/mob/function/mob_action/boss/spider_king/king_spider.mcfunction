@@ -57,12 +57,6 @@ execute if score @s mob_tick_count matches 24 at @s run function mob:mob_action/
 # 視点をplayerに
 # execute if score @s mob_tick_count matches 25.. at @s at @s run rotate @s facing entity @p[tag=player]
 
-# 移動速度上昇
-execute if score @s mob_tick_count matches 25.. at @s at @s run attribute @s movement_speed base set 1.05
-
-
-# 移動速度reset
-execute if score @s mob_tick_count matches 199.. at @s at @s run attribute @s movement_speed base reset
 
 # reset
 execute if score @s mob_tick_count matches 200.. run scoreboard players set @s mob_tick_count 1

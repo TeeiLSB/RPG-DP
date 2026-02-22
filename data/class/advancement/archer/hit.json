@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "arrow": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [],
+            "is_direct": false
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "class:archer/arrow/hit/_"
+  }
+}

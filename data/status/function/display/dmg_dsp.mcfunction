@@ -7,7 +7,8 @@ execute unless score @s prehp = @s health run scoreboard players operation @s dm
 execute unless score @s prehp = @s health run scoreboard players operation @s dmgdsp /= #10 Constant
 
 # 確認用
-# execute unless score @s prehp = @s health run tellraw @p [{"score":{"name":"@s","objective":"dmgdecdsp"}}]
+# execute unless score @s prehp = @s health run tellraw @p [{"score":{"name":"@s","objective":"dmgdsp"}}]
+
 
 execute unless score @s prehp = @s health run execute store result storage lib: dmg.value int 1 run scoreboard players get @s dmgdsp
 execute unless score @s prehp = @s health run execute store result storage lib: dmg.decvalue int 1 run scoreboard players get @s dmgdecdsp
@@ -20,20 +21,19 @@ execute if entity @s[tag=ReceiveSweep] unless score @s prehp = @s health run loo
 execute if entity @s[tag=ReceiveMagic] unless score @s prehp = @s health run loot spawn ~ ~ ~ loot status:dmg_dsp_magic
 execute if entity @s[tag=ReceiveFire] unless score @s prehp = @s health run loot spawn ~ ~ ~ loot status:dmg_dsp_fire
 
-execute as @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run scoreboard players set @s autokill 15
-execute as @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run data modify entity @s CustomName set from entity @s Item.components."minecraft:custom_name"
-execute as @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run execute store result score @s rng run random value 1..10
-execute as @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run data merge entity @s {CustomNameVisible:1b,PickupDelay:32767}
-execute as @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run function status:display/motion_rng
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run scoreboard players set @s autokill 15
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run data modify entity @s CustomName set from entity @s Item.components."minecraft:custom_name"
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run execute store result score @s rng run random value 1..10
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run data merge entity @s {CustomNameVisible:1b,PickupDelay:32767}
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run function status:display/motion_rng
 
+
+execute unless score @s prehp = @s health run tag @s remove ReceiveCrit
+execute unless score @s prehp = @s health run tag @s remove ReceiveNonCrit
+execute unless score @s prehp = @s health run tag @s remove ReceiveSweep
+execute unless score @s prehp = @s health run tag @s remove ReceiveFire
 
 execute unless score @s prehp = @s health run scoreboard players operation @s prehp = @s health
-
-
-tag @s remove ReceiveCrit
-tag @s remove ReceiveNonCrit
-tag @s remove ReceiveSweep
-tag @s remove ReceiveFire
 
 execute if score @s health matches 1.. run tag @s remove ReceiveMelee
 execute if score @s health matches 1.. run tag @s remove ReceiveMagic

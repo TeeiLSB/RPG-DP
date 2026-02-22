@@ -32,5 +32,8 @@ function quest:reload
 
 scoreboard players set $bgm bgm_time 0
 
+# forceload
+forceload add -64 -64 63 63
+
 
 say Reloaded!

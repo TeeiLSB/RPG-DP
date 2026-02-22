@@ -1,0 +1,33 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.magic.left",
+    "fallback": "Left Click Detection"
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": [
+    "archer_pottery_sherd"
+  ],
+  "weight": 2,
+  "effects": {
+    "minecraft:post_piercing_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "class:archer/skill_left/trigger"
+        }
+      }
+    ]
+  }
+}

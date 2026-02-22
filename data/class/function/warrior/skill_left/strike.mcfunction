@@ -1,8 +1,8 @@
-playsound block.anvil.place master @s ~ ~ ~ 2 0.5
+playsound block.anvil.place master @s ~ ~ ~ 1 0.25
 scoreboard players set @s Warrior.ProgTimer 0
 
 tag @s add Warrior.Skill_Used
-execute at @s as @n[distance=..5,tag=mobs,scores={HurtTime=0}] at @s run function class:warrior/skill/hit
+execute at @s as @n[distance=..5,tag=mobs,scores={HurtTime=0}] at @s run function class:warrior/skill_left/hit_strike
 
 tag @s remove Warrior.Skill_Used
 

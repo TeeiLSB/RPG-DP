@@ -17,7 +17,7 @@
     "mainhand"
   ],
   "supported_items": [
-    "blade_pottery_sherd"
+    "sheaf_pottery_sherd"
   ],
   "weight": 2,
   "effects": {
@@ -25,7 +25,7 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "class:warrior/skill/trigger"
+          "function": "class:warrior/skill_left/trigger"
         }
       }
     ]

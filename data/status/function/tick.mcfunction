@@ -20,10 +20,10 @@ effect give @a resistance infinite 252 true
 
 
 
-execute as @e[tag=mobs,type=!player] at @s run function status:display/dataget
+execute as @e[tag=mobs,type=!player] if score @s health matches 1.. at @s run function status:display/dataget
 
 
-execute as @e[tag=mobs,type=!player] at @s run function status:display/dmg_dsp
+execute as @e[tag=mobs,type=!player] if score @s health matches 1.. at @s run function status:display/dmg_dsp
 
 
 

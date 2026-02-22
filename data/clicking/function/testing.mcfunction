@@ -27,7 +27,7 @@ execute if score @s damage matches 0 run scoreboard players set @s dmgtemp 0
 
 
 scoreboard players operation @s dmgtemp /= #10 Constant
-scoreboard players operation @n[type=!player,scores={HurtTime=10}] mob.qdamage += @s dmgtemp
+scoreboard players operation @n[type=!player,scores={HurtTime=10}] mob.qdamage = @s dmgtemp
 
 execute if score @s damage matches 11.. run tag @n[type=!player,scores={HurtTime=10}] add ReceiveCrit
 execute if score @s damage matches ..10 run tag @n[type=!player,scores={HurtTime=10}] add ReceiveNonCrit

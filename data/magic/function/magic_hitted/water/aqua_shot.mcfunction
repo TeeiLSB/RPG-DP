@@ -5,7 +5,7 @@
 damage @s 1 minecraft:player_attack by @n[type=armor_stand,tag=aqua_shot,tag=magic_marker] from @n[type=armor_stand,tag=aqua_shot,tag=magic_marker]
 
 # ダメージ処理
-scoreboard players operation @s mob.qdamage += @n[type=armor_stand,tag=aqua_shot,tag=magic_marker] mgcdmg
+scoreboard players operation @s mob.qdamage = @n[type=armor_stand,tag=aqua_shot,tag=magic_marker] mgcdmg
 
 execute if score @s health matches ..0 on attacker run function magic:magic_hitted/killed_with_magic
 

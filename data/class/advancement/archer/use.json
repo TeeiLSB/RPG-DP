@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "criteria": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "archer_pottery_sherd"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "class:archer/skill_right/trigger"
+  }
+}
