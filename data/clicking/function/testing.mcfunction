@@ -1,8 +1,8 @@
 function item_attack:item_attack_all
 
+tag @n[tag=mobs,scores={HurtTime=10}] add Damage_Reciver
 
-
- #tellraw @s [{"selector":"@s"},"が",{"selector":"@e[type=!player,scores={HurtTime=10}]"},"を殴った！ (",{"score":{"name":"@s","objective":"damage"}},"ダメージ!}"]
+ #tellraw @s [{"selector":"@s"},"が",{"selector":"@e[tag=mobs,tag=Damage_Reciver]"},"を殴った！ (",{"score":{"name":"@s","objective":"damage"}},"ダメージ!}"]
 
 # chargeごとにdamageを減らす
 
@@ -27,16 +27,20 @@ execute if score @s damage matches 0 run scoreboard players set @s dmgtemp 0
 
 
 scoreboard players operation @s dmgtemp /= #10 Constant
-scoreboard players operation @n[type=!player,scores={HurtTime=10}] mob.qdamage = @s dmgtemp
+scoreboard players operation @n[tag=mobs,tag=Damage_Reciver] mob.qdamage = @s dmgtemp
 
-execute if score @s damage matches 11.. run tag @n[type=!player,scores={HurtTime=10}] add ReceiveCrit
-execute if score @s damage matches ..10 run tag @n[type=!player,scores={HurtTime=10}] add ReceiveNonCrit
+tag @n[tag=mobs,tag=Damage_Reciver] remove ReceiveNonCrit
+tag @n[tag=mobs,tag=Damage_Reciver] remove ReceiveCrit
+execute if score @s damage matches 11.. run tag @n[tag=mobs,tag=Damage_Reciver] add ReceiveCrit
+execute if score @s damage matches ..10 run tag @n[tag=mobs,tag=Damage_Reciver] add ReceiveNonCrit
 
-tag @n[type=!player,scores={HurtTime=10}] add ReceiveMelee
+tag @n[tag=mobs,tag=Damage_Reciver] add ReceiveMelee
+
+scoreboard players reset @n[tag=mobs,tag=Damage_Reciver] Attacked_By
+scoreboard players operation @n[tag=mobs,tag=Damage_Reciver] Attacked_By = @s player_id
 
 
-
-
+tag @n[tag=mobs,tag=Damage_Reciver] remove Damage_Reciver
 
 # tellraw @s [{"score":{"name":"@s","objective":"dmgtemp"}}]
 

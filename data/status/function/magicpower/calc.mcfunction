@@ -29,16 +29,16 @@ scoreboard players operation #multi Temporary = @s mgcdmg_multi
 scoreboard players operation #calc Temporary = @s mgcdmg
 
 # calc *= multi
-scoreboard players operation #calc Temporary *= #multi Temporary
+scoreboard players operation #calc Temporary += #multi Temporary
 
 # calc /= 10  ← 最後に割る
-scoreboard players operation #calc Temporary /= #10 Constant
+# scoreboard players operation #calc Temporary /= #10 Constant
 
 # 反映
 scoreboard players operation @s mgcdmg = #calc Temporary
 
-scoreboard players operation @s mgcdmg *= @s magicbook_damage
-scoreboard players operation @s mgcdmg /= #10 Constant
+scoreboard players operation @s mgcdmg += @s magicbook_damage
+# scoreboard players operation @s mgcdmg /= #10 Constant
 
 # 後始末
 scoreboard players reset #calc Temporary

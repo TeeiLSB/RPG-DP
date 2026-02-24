@@ -6,6 +6,8 @@ scoreboard players set @s defense 20
 scoreboard players set @s maxmp 200
 scoreboard players set @s mp 200
 
+scoreboard players set @s mob_xp 100
+
 effect give @s instant_health infinite 252 true
 
 tag @s add Name.IronGolem

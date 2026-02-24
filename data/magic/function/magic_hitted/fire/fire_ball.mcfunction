@@ -21,10 +21,11 @@ execute on attacker run scoreboard players operation @s mgcdmg /= #2 Constant
 # 周囲のmob 4体までにダメージ処理
 execute on attacker run scoreboard players operation @e[tag=mobs,sort=nearest,distance=..2.5,scores={HurtTime=0},limit=4,tag=!fire_ball_exclude] mob.qdamage = @s mgcdmg
 
-execute as @e[tag=mobs,sort=nearest,distance=..2.5,scores={HurtTime=0},limit=4] if score @s health matches ..0 on attacker run function magic:magic_hitted/killed_with_magic
+scoreboard players reset @e[tag=mobs,sort=nearest,distance=..2.5,scores={HurtTime=0},limit=4] Attacked_By
+scoreboard players operation @e[tag=mobs,sort=nearest,distance=..2.5,scores={HurtTime=0},limit=4] Attacked_By = @n[type=armor_stand,tag=fire_ball,tag=magic_marker] player_id
 
 
-execute on attacker run function mob:main/killtp
+execute on attacker if entity @s[type=armor_stand,tag=fire_ball,tag=magic_marker] run function mob:main/killtp
 
 playsound entity.generic.explode ambient @a[distance=..10]
 

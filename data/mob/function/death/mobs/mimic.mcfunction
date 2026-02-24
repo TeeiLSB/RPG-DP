@@ -1,4 +1,4 @@
-particle dust{color:[1,1,1],scale:2.5} ~ ~1 ~ 0.5 0.8 0.5 0.1 8
+particle dust{color:[1,1,1],scale:2.5} ~ ~1 ~ 0.5 0.5 0.5 0.1 8
 
 # summon item ~ ~ ~ {Item:{id:"gold_ingot",count:1}}
 

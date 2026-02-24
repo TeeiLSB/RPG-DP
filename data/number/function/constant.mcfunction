@@ -2,7 +2,7 @@ scoreboard players set #1000 XPbar 1000
 scoreboard players set #10 XPbar 10
 scoreboard players set #6 XPbar 6
 
-
+scoreboard players set #-1 Constant -1
 scoreboard players set #1 Constant 1
 scoreboard players set #2 Constant 2
 scoreboard players set #3 Constant 3

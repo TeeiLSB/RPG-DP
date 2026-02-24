@@ -20,10 +20,10 @@ execute if score @s chant_time_rate matches 10 run title @s subtitle [{"text":"f
 
 
 
-execute if score @s chant_time_rate matches 1..5 run particle dust{scale:1,color:[1.0,0.22,0.16]} ~ ~1 ~ 0.5 0.5 0.5 0 1
-execute if score @s chant_time_rate matches 5..7 run particle dust{scale:1,color:[1.0,0.22,0.16]} ~ ~1 ~ 0.5 0.5 0.5 0 2
-execute if score @s chant_time_rate matches 8..9 run particle dust{scale:1,color:[1.0,0.22,0.16]} ~ ~1 ~ 0.5 0.5 0.5 0 3
-execute if score @s chant_time_rate matches 10 run particle dust{scale:1,color:[1.0,0.22,0.16]} ~ ~1 ~ 0.5 0.5 0.5 0 4
+execute if score @s chant_time_rate matches 1..5 run particle flame ~ ~1 ~ 0.5 0.5 0.5 0.025 1
+execute if score @s chant_time_rate matches 5..7 run particle flame ~ ~1 ~ 0.5 0.5 0.5 0.025 2
+execute if score @s chant_time_rate matches 8..9 run particle flame ~ ~1 ~ 0.5 0.5 0.5 0.025 3
+execute if score @s chant_time_rate matches 10 run particle flame ~ ~1 ~ 0.5 0.5 0.5 0.025 4
 
 execute if score @s chant_time matches 2 run playsound block.fire.ambient master @s ~ ~ ~ 1 1
 execute if score @s chant_time matches 25 run playsound block.fire.ambient master @s ~ ~ ~ 1.2 1.2
