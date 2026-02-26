@@ -20,10 +20,6 @@ effect give @a resistance infinite 252 true
 
 
 
-execute as @e[tag=mobs,type=!player] at @s run function status:display/dataget
-
-
-execute as @e[tag=mobs,type=!player] at @s run function status:display/dmg_dsp
 
 
 

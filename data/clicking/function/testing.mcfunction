@@ -2,7 +2,7 @@ function item_attack:item_attack_all
 
 tag @n[tag=mobs,scores={HurtTime=10}] add Damage_Reciver
 
- #tellraw @s [{"selector":"@s"},"が",{"selector":"@e[tag=mobs,tag=Damage_Reciver]"},"を殴った！ (",{"score":{"name":"@s","objective":"damage"}},"ダメージ!}"]
+ #tellraw @s [{"selector":"@s"},"が",{"selector":"@e[tag=mobs,tag=Damage_Reciver]"},"を殴った！ (",{"score":{"name":"@s","objective":"atkdmg"}},"ダメージ!}"]
 
 # chargeごとにdamageを減らす
 
@@ -24,7 +24,7 @@ execute if score @s damage matches 3 run scoreboard players operation @s dmgtemp
 execute if score @s damage matches 2 run scoreboard players operation @s dmgtemp *= #2 Constant
 execute if score @s damage matches 1 run scoreboard players operation @s dmgtemp *= #1 Constant
 execute if score @s damage matches 0 run scoreboard players set @s dmgtemp 0
-
+# tellraw @s [{"score":{"name":"@s","objective":"damage"}}]
 
 scoreboard players operation @s dmgtemp /= #10 Constant
 scoreboard players operation @n[tag=mobs,tag=Damage_Reciver] mob.qdamage = @s dmgtemp
@@ -42,7 +42,7 @@ scoreboard players operation @n[tag=mobs,tag=Damage_Reciver] Attacked_By = @s pl
 
 tag @n[tag=mobs,tag=Damage_Reciver] remove Damage_Reciver
 
-# tellraw @s [{"score":{"name":"@s","objective":"dmgtemp"}}]
+ #tellraw @s [{"score":{"name":"@s","objective":"dmgtemp"}}]
 
 scoreboard players set @s dmgtemp 0
 

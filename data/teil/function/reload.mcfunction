@@ -10,6 +10,7 @@ function teil:team
 # diff
 difficulty easy
 
+function ui:skill_tree/reload
 
 
 # 殴りdamage(full charge)を10にする
@@ -28,6 +29,10 @@ function class:reload
 function magic:reload
 
 function quest:reload
+
+# シュルカーボックスの設置
+setblock 0 -64 0 yellow_shulker_box
+
 
 
 scoreboard players set $bgm bgm_time 0

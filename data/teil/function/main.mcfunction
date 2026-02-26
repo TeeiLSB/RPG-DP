@@ -30,7 +30,7 @@ execute as @a at @s run function magic:tick
 function item_ability:tick
 function item_cooldown:tick
 
-function ui:tick
+execute as @a at @s run function ui:skill_tree/tick
 
 function status:tick
 

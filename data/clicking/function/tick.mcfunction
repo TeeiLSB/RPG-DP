@@ -9,8 +9,8 @@ execute as @a store result score @s HurtTime run data get entity @s HurtTime
 
 scoreboard players reset *[scores={HurtTime=0}] HurtTime
 
-execute as @e[tag=mobs] at @s run function clicking:defense_calc
-execute as @a at @s run function clicking:defense_calc
+execute as @e[tag=mobs] at @s run function clicking:damage_main_calc
+execute as @a at @s run function clicking:damage_main_calc
 
 
 

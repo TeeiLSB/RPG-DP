@@ -1,1 +1,0 @@
-function ui:scoreboard_ui/set

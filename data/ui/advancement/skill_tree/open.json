@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "arrow": {
+      "trigger": "minecraft:any_block_use",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:ender_chest"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "ui:skill_tree/main/open"
+  }
+}

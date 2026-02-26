@@ -1,6 +1,6 @@
 scoreboard objectives add attack_1tick dummy
 scoreboard objectives add Right_Click minecraft.used:carrot_on_a_stick
-scoreboard objectives add damage dummy
+scoreboard objectives add damage custom:damage_dealt
 scoreboard objectives add HurtTime dummy
 scoreboard objectives add killed dummy
 scoreboard objectives add maxcd dummy
@@ -40,7 +40,7 @@ scoreboard objectives add hpdisplay dummy
 scoreboard objectives add coin dummy
 
 # ui
-scoreboard objectives add UI dummy
+scoreboard objectives add ui.page dummy
 
 # absorb
 scoreboard objectives add absorb dummy

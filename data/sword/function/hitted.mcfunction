@@ -2,8 +2,8 @@
 damage @s 1 minecraft:player_attack by @n[type=armor_stand,tag=sword_armor_stand] from @n[type=armor_stand,tag=sword_armor_stand]
 scoreboard players operation @s mob.qdamage = @n[type=armor_stand,tag=sword_armor_stand] atkdmg
 
-execute if score @s health matches ..0 on attacker run function sword:killed_with_sword
-
+execute if entity @s[tag=mobs] run scoreboard players reset @s Attacked_By
+execute if entity @s[tag=mobs] run scoreboard players operation @s Attacked_By = @n[type=armor_stand,tag=sword_armor_stand] player_id
 
 
 

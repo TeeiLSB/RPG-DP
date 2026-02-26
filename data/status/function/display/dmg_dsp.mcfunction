@@ -1,19 +1,19 @@
-execute unless score @s prehp = @s health run scoreboard players operation @s dmgdsp = @s prehp
-execute unless score @s prehp = @s health run scoreboard players operation @s dmgdsp -= @s health
+scoreboard players operation @s dmgdsp = @s prehp
+scoreboard players operation @s dmgdsp -= @s health
 
-execute unless score @s prehp = @s health run scoreboard players operation @s dmgdecdsp = @s dmgdsp
-execute unless score @s prehp = @s health run scoreboard players operation @s dmgdecdsp %= #10 Constant
+scoreboard players operation @s dmgdecdsp = @s dmgdsp
+scoreboard players operation @s dmgdecdsp %= #10 Constant
 
-execute unless score @s prehp = @s health run scoreboard players operation @s dmgdsp /= #10 Constant
+scoreboard players operation @s dmgdsp /= #10 Constant
 
 # 確認用
-# execute unless score @s prehp = @s health run tellraw @p [{"score":{"name":"@s","objective":"dmgdsp"}}]
+# tellraw @p [{"score":{"name":"@s","objective":"dmgdsp"}}]
 
 
-execute unless score @s prehp = @s health run execute store result storage lib: dmg.value int 1 run scoreboard players get @s dmgdsp
-execute unless score @s prehp = @s health run execute store result storage lib: dmg.decvalue int 1 run scoreboard players get @s dmgdecdsp
+execute store result storage lib: dmg.value int 1 run scoreboard players get @s dmgdsp
+execute store result storage lib: dmg.decvalue int 1 run scoreboard players get @s dmgdecdsp
 
-# execute unless score @s prehp = @s health run tellraw @p {"nbt":"dmg.value","storage":"lib:"}
+# tellraw @p {"nbt":"dmg.value","storage":"lib:"}
 
 execute if entity @s[tag=ReceiveNonCrit] unless score @s prehp = @s health run loot spawn ~ ~ ~ loot status:dmg_dsp
 execute if entity @s[tag=ReceiveCrit] unless score @s prehp = @s health run loot spawn ~ ~ ~ loot status:dmg_dsp_crit
@@ -28,15 +28,10 @@ execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run function status:display/motion_rng
 
 
-execute unless score @s prehp = @s health run tag @s remove ReceiveCrit
-execute unless score @s prehp = @s health run tag @s remove ReceiveNonCrit
-execute unless score @s prehp = @s health run tag @s remove ReceiveSweep
-execute unless score @s prehp = @s health run tag @s remove ReceiveFire
 
-execute unless score @s prehp = @s health run scoreboard players operation @s prehp = @s health
+scoreboard players operation @s prehp = @s health
 
-execute if score @s health matches 1.. run tag @s remove ReceiveMelee
-execute if score @s health matches 1.. run tag @s remove ReceiveMagic
+
 
 data remove storage lib: dmg.value
 data remove storage lib: dmg.decvalue

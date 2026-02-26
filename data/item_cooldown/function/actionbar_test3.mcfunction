@@ -1,7 +1,7 @@
 scoreboard players operation @s absorb = @s health
 scoreboard players operation @s absorb -= @s maxhealth
 
-execute if score @s poison_duration matches 0 run function item_cooldown:actionbar_nomal
+function item_cooldown:actionbar_nomal
 execute if score @s poison_duration matches 1.. run function item_cooldown:actionbar_poison
 function item_cooldown:actionbar_absorb
 function item_cooldown:actionbar_mp
