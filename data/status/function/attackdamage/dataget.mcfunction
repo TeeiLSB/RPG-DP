@@ -12,6 +12,12 @@ scoreboard players operation @s atkdmg += @s chest_atkdmg
 scoreboard players operation @s atkdmg += @s legs_atkdmg
 scoreboard players operation @s atkdmg += @s feet_atkdmg
 
+#skill tree
+scoreboard players operation $skill_tree Temporary = @s ST.sm.Sharpness
+scoreboard players operation $skill_tree Temporary *= #50 Constant
+scoreboard players operation @s atkdmg += $skill_tree Temporary
+scoreboard players reset $skill_tree Temporary
+
 
 scoreboard players operation @s atkdmg_display = @s atkdmg
 scoreboard players operation @s atkdmg_display /= #10 Constant

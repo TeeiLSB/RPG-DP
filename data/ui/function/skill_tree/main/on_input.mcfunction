@@ -6,6 +6,7 @@ data modify storage ec:ui click.score set from block 0 -64 0 Items.[0].component
 
 data modify storage ec:ui click.cost set from block 0 -64 0 Items.[0].components."minecraft:custom_data".ui_item.cost
 data modify storage ec:ui click.obj set from block 0 -64 0 Items.[0].components."minecraft:custom_data".ui_item.obj
+data modify storage ec:ui click.req set from block 0 -64 0 Items.[0].components."minecraft:custom_data".ui_item.req
 
 # upgradeのcheck
 

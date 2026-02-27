@@ -1,9 +1,9 @@
 scoreboard players set @s ST.sm.Sharpness 0
-
-
-
-
-
+scoreboard players set @s ST.sm.Sweep 0
+scoreboard players set @s ST.sm.Health 0
+scoreboard players set @s ST.sm.Strength 0
+scoreboard players set @s ST.sm.Throw_Sword 0
+scoreboard players set @s ST.sm.Block_Counter 0
 
 
 scoreboard players operation @s SP.Swordman += @s SP.Swordman.reset

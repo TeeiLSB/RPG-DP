@@ -41,6 +41,7 @@ scoreboard objectives add coin dummy
 
 # ui
 scoreboard objectives add ui.page dummy
+scoreboard objectives add NoReq dummy
 
 # absorb
 scoreboard objectives add absorb dummy
