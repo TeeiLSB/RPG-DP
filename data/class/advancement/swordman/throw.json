@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "criteria": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "slots": {
+            "weapon.mainhand": {
+              "items": "minecraft:blade_pottery_sherd"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "class:swordman/bladecast/trigger_check"
+  }
+}

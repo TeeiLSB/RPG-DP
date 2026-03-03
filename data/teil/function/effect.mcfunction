@@ -1,2 +1,3 @@
-gamerule naturalRegeneration false
-gamerule fallDamage false
+gamerule natural_health_regeneration false
+gamerule fall_damage false
+gamerule show_death_messages false

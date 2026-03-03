@@ -1,0 +1,38 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "(",
+        "extra": [
+          {
+            "text": "保有ポイント: ",
+            "extra": [
+              {
+                "score": {
+                  "objective": "SP.Warrior",
+                  "name": "@s"
+                },
+                "extra": [
+                  {
+                    "text": ")",
+                    "color": "dark_gray",
+                    "italic": false
+                  }
+                ],
+                "color": "yellow",
+                "italic": false
+              }
+            ],
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "color": "dark_gray",
+        "italic": false
+      }
+    ],
+    "mode": "append"
+  }
+]

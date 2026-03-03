@@ -7,6 +7,10 @@ execute as @e[type=!player,tag=mobs] at @s run function mob:mob_action/list
 # glow
 execute as @e[tag=mobs] run function effect:glow/glow
 
+# mob vs mob
+execute as @e[nbt={HurtTime:0s}] run tag @s remove exclude_hurttime
+execute as @e[tag=mobs,scores={HurtTime=1..},tag=!exclude_hurttime] at @s run function mob:main/attacked_entity
+
 execute as @e[tag=mobs] run scoreboard players operation @s sword_xp = @s mob_xp
 execute as @e[tag=mobs] run scoreboard players operation @s magic_xp = @s mob_xp
 

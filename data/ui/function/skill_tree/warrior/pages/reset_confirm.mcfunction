@@ -1,0 +1,2 @@
+item replace entity @s enderchest.11 with heartbreak_pottery_sherd[item_model=lime_concrete,item_name={"text":"リセットする","color":"green"},custom_data={ui_item:{score:"5",cmd:"function ui:skill_tree/warrior/upgrade/reset"}}]
+item replace entity @s enderchest.15 with heartbreak_pottery_sherd[item_model=red_concrete,item_name={"text":"キャンセル","color":"red"},custom_data={ui_item:{score:"5",cmd:"playsound minecraft:ui.button.click"}}]

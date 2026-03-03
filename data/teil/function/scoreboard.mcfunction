@@ -46,6 +46,12 @@ scoreboard objectives add NoReq dummy
 # absorb
 scoreboard objectives add absorb dummy
 
+# playsound
+scoreboard objectives add PlaySound.Timer dummy
+
+
+
+
 # reach
 scoreboard objectives add Reach dummy
 scoreboard objectives add Item_Reach dummy
@@ -175,11 +181,11 @@ scoreboard objectives add tick dummy
 execute as @a at @s run function magic:reload
 
 # ability
-function item_ability:ability_scoreboard
+function items:item_ability/ability_scoreboard
 
 
 # numbers
-function number:constant
+function teil:constant
 
 # dungeon
 scoreboard objectives add dungeon.joinend.sand dummy

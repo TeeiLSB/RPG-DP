@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "sit": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "wolf",
+          "nbt": {
+            "Tags": [
+              "ride_wolf"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "debug:ride/ride"
+  }
+}

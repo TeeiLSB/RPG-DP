@@ -1,3 +1,7 @@
+
+function status:defense/defense_dataget
+
+
 # 0にリセット
 scoreboard players set @s defense 0
 

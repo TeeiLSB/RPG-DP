@@ -3,11 +3,9 @@
 execute as @a at @s run function status:speed/tick
 
 
-execute as @a if entity @s[tag=add100def] run function status:defense/test
-
 execute as @a at @s run function status:health/health_calc
 
-execute as @a at @s run function status:defense/inventory_changed
+execute as @a at @s run function status:defense/defense_calc
 execute as @a at @s run function status:magicpower/tick
 execute as @a at @s run function status:regen/tick
 

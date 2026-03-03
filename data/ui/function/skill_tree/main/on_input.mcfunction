@@ -8,9 +8,12 @@ data modify storage ec:ui click.cost set from block 0 -64 0 Items.[0].components
 data modify storage ec:ui click.obj set from block 0 -64 0 Items.[0].components."minecraft:custom_data".ui_item.obj
 data modify storage ec:ui click.req set from block 0 -64 0 Items.[0].components."minecraft:custom_data".ui_item.req
 
+data modify storage ec:ui click.c set from block 0 -64 0 Items.[0].components."minecraft:custom_data".ui_item.c
+
 # upgradeのcheck
 
-function ui:skill_tree/sword_man/upgrade/check with storage ec:ui click
+function ui:skill_tree/main/check with storage ec:ui click
+
 
 # 実行
 function ui:skill_tree/main/cmd with storage ec:ui click

@@ -12,8 +12,8 @@ execute if score @s ArcherPre.ProgTimer matches 1.. \
 function class:archer/arrow/shoot
 
 
-execute as @e[type=arrow,tag=ArcherArrow,nbt={inGround:1b}] at @s run particle dust{color:[1,1,1],scale:2.5} ~ ~0.25 ~
 execute as @e[type=arrow,tag=ArcherArrow,nbt={inGround:1b}] at @s run function mob:main/killtp
+
 
 
 execute run scoreboard players operation @s ArcherPre.ProgTimer = @s ArcherShoot.ProgTimer

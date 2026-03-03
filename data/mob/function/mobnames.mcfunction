@@ -6,10 +6,13 @@ execute if entity @s[tag=Name.IronGolem] run data modify storage lib: hp.name se
 execute if entity @s[tag=Name.SilverFish] run data modify storage lib: hp.name set value "シルバーフィッシュ"
 execute if entity @s[tag=Name.dolrider] run data modify storage lib: hp.name set value "イルカライダー"
 execute if entity @s[tag=Name.dolphin] run data modify storage lib: hp.name set value "イルカ"
+execute if entity @s[tag=Name.Wolf] run data modify storage lib: hp.name set value "オオカミ"
 execute if entity @s[tag=Name.CaveZombie] run data modify storage lib: hp.name set value "洞窟ゾンビ"
 execute if entity @s[tag=Name.CaveSpider] run data modify storage lib: hp.name set value "洞窟クモ"
 execute if entity @s[tag=Name.Husk_Warrior] run data modify storage lib: hp.name set value "ハスクウォーリアー"
+execute if entity @s[tag=Name.Husk_Archer] run data modify storage lib: hp.name set value "アーチャーハスク"
 execute if entity @s[tag=Name.Mimic] run data modify storage lib: hp.name set value "ミミック"
+execute if entity @s[tag=Name.Slime] run data modify storage lib: hp.name set value "スライム"
 execute if entity @s[tag=Name.Spider_King] run data modify storage lib: hp.name set value "スパイダーキング"
 execute if entity @s[tag=Name.Spider_Children] run data modify storage lib: hp.name set value "スパイダーチルドレン"
 

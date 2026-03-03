@@ -1,0 +1,24 @@
+execute as @e[type=item_display,tag=sword_display] at @s if block ^ ^ ^0.5 air run function class:swordman/bladecast/sword_animation
+
+execute as @e[type=item_display,tag=sword_display] at @s if block ^ ^ ^0.5 water run function class:swordman/bladecast/sword_animation
+
+
+execute as @e[type=armor_stand,tag=sword_armor_stand] at @s run function class:swordman/bladecast/armor_stand_tick
+
+execute as @a at @s if score @s has_sword_skill matches 1.. run function class:swordman/bladecast/sneak
+
+execute as @e at @s if score @s has_sword_skill matches 1.. run function class:swordman/bladecast/blockcounter/tick
+
+
+execute as @a if score @s atkdmg_bonus_qtime matches 1.. run scoreboard players remove @s atkdmg_bonus_qtime 1
+execute as @a if score @s atkdmg_bonus_qtime matches 1 run scoreboard players add @s atkdmg_bonus_value 50
+
+
+
+
+
+
+
+
+
+

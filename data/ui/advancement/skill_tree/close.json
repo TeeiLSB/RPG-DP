@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "custom_data": "{close_detector:1b}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "ui:skill_tree/main/close"
+    }
+}
