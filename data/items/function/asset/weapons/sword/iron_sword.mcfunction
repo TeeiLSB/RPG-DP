@@ -9,10 +9,9 @@ give @s blade_pottery_sherd\
                                 [{"text":"攻撃速度 ","italic":false,"color":"yellow"},\
                                     {"text":"1.6","italic":false,"color":"green"}],\
                                     [{"text":""}],\
-                         [{"text":"スニーク+左クリック","italic":false,"color":"gold"}],\
-                                [{"text":"フラッシュライン ","italic":false,"color":"aqua"}],\
-                                [{"text":""}]],\
-                                    custom_data={matkdmg:60,Sword:1b,Ability:1b,Sweep:1b,id:iron_sword},\
+                         [{"text":"スニーク 左クリック","italic":false,"color":"gold"},{"text":" ブレイドキャスト","italic":false,"color":"aqua"}],\
+                                [{"text":"右クリック","italic":false,"color":"gold"},{"text":" ブロックカウンター","italic":false,"color":"aqua"}]],\
+                                custom_data={matkdmg:60,Sword:1b,Ability:1b,Sweep:1b,id:iron_sword},\
                                     enchantment_glint_override=false,\
                                     consumable=\
                                         {"consume_seconds": 100000000,"animation": "block","sound": "minecraft:intentionally_empty","has_consume_particles": false}]

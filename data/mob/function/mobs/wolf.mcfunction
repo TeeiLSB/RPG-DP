@@ -16,7 +16,7 @@ item replace entity @s saddle with glass_bottle[minecraft:equippable={slot:"sadd
 tag @s add Name.Wolf
 tag @s add Rank.D
 
-data merge entity @s {CustomNameVisible:1b,variant:"black",CollarColor:0b}
+data merge entity @s {CustomNameVisible:1b,variant:"black",CollarColor:15b}
 
 
 tag @s add ride_wolf

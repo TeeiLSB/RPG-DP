@@ -14,7 +14,7 @@ execute if block ^ ^ ^0.5 air run playsound entity.player.attack.sweep ambient @
 execute if block ^ ^ ^0.5 air run playsound entity.player.attack.sweep ambient @a ~ ~ ~ 0.5 0.1
 
 
-execute as @e[dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] if entity @s[scores={HurtTime=0},tag=mobs] run function class:swordman/bladecast/hitted
+execute as @e[dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] if entity @s[nbt={HurtTime:0s},tag=mobs] run function class:swordman/bladecast/hitted
 
 
 

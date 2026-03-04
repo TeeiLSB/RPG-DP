@@ -1,17 +1,85 @@
 {
   "criteria": {
-    "arrow": {
+    "crit": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "damage": {
+          "dealt": {
+            "min": 1.001,
+            "max": 3
+          },
           "type": {
-            "tags": [],
+            "is_direct": true
+          }
+        }
+      }
+    },
+      "10": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "min": 0.801,
+            "max": 1
+          },
+          "type": {
+            "is_direct": true
+          }
+        }
+      }
+    },
+      "8": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "min": 0.601,
+            "max": 0.8
+          },
+          "type": {
+            "is_direct": true
+          }
+        }
+      }
+    },
+      "6": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "min": 0.401,
+            "max": 0.6
+          },
+          "type": {
+            "is_direct": true
+          }
+        }
+      }
+    },
+      "4": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "min": 0,
+            "max": 0.4
+          },
+          "type": {
             "is_direct": true
           }
         }
       }
     }
   },
+  "requirements": [
+    [
+      "crit",
+      "10",
+      "8",
+      "6",
+      "4"
+    ]
+  ],
   "rewards": {
     "function": "player:click/lclicked"
   }

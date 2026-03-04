@@ -26,5 +26,6 @@ item replace entity @s armor.chest with glass_bottle[minecraft:equippable={slot:
 item replace entity @s armor.legs with glass_bottle[minecraft:equippable={slot:legs}]
 item replace entity @s armor.feet with leather_boots[minecraft:dyed_color=11973513]
 
+tag @s add specific_action
 tag @s add mobs
 tag @s add spawend

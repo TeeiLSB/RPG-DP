@@ -6,16 +6,16 @@ tag @s add lightning_exclude
 
 
 # 赤くするためのダメージ (本体もいれるため3体にする)
-execute as @e[tag=mobs,sort=nearest,distance=..4,scores={HurtTime=0},limit=3] run \
+execute as @e[tag=mobs,sort=nearest,distance=..4,nbt={HurtTime:0s},limit=3] run \
 damage @s 1 minecraft:player_attack by @n[type=armor_stand,tag=lightning,tag=magic_marker] from @n[type=armor_stand,tag=lightning,tag=magic_marker]
 
 # particle
-execute as @e[tag=mobs,sort=nearest,distance=..4,scores={HurtTime=0},limit=3] at @s run function magic:magic_hitted/thunder/lightning_particle
+execute as @e[tag=mobs,sort=nearest,distance=..4,nbt={HurtTime:0s},limit=3] at @s run function magic:magic_hitted/thunder/lightning_particle
 
 
 
 # 本体にダメージ処理
-execute on attacker run scoreboard players operation @n[tag=mobs,tag=lightning_exclude,scores={HurtTime=0}] mob.qdamage = @s mgcdmg
+execute on attacker run scoreboard players operation @n[tag=mobs,tag=lightning_exclude,nbt={HurtTime:0s}] mob.qdamage = @s mgcdmg
 
 
 # あと2体のためダメージを/3する
@@ -24,9 +24,9 @@ execute on attacker run scoreboard players operation @s mgcdmg /= #3 Constant
 
 
 # 周囲のmob 2体までにダメージ処理
-execute on attacker run scoreboard players operation @e[tag=mobs,sort=nearest,distance=..4,scores={HurtTime=0},limit=2,tag=!lightning_exclude] mob.qdamage = @s mgcdmg
+execute on attacker run scoreboard players operation @e[tag=mobs,sort=nearest,distance=..4,nbt={HurtTime:0s},limit=2,tag=!lightning_exclude] mob.qdamage = @s mgcdmg
 
-execute as @e[tag=mobs,sort=nearest,distance=..4,scores={HurtTime=0},limit=3] if score @s health matches ..0 on attacker run function magic:magic_hitted/killed_with_magic
+execute as @e[tag=mobs,sort=nearest,distance=..4,nbt={HurtTime:0s},limit=3] if score @s health matches ..0 on attacker run function magic:magic_hitted/killed_with_magic
 
 
 execute on attacker run function mob:main/killtp

@@ -23,4 +23,6 @@
     data remove storage lib: Pos
     schedule function class:archer/arrow/reset 1t
 
+    #scoreboard players reset $MotionPower Temporary
+
  

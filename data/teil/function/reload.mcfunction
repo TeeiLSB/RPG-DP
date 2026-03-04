@@ -14,7 +14,7 @@ function ui:skill_tree/reload
 
 
 # 殴りdamage(full charge)を10にする
-execute as @a run attribute @s minecraft:attack_damage base set 1.025
+execute as @a run attribute @s minecraft:attack_damage base set 1
 
 # effects
 function teil:effect
@@ -30,6 +30,9 @@ function magic:reload
 
 function quest:reload
 
+
+
+function player:leveling/reload
 # シュルカーボックスの設置
 setblock 0 -64 0 yellow_shulker_box
 

@@ -1,6 +1,5 @@
 
 execute as @a at @s run function items:main/tick
-function player:click/tick
 
 
 function player:join
@@ -42,8 +41,12 @@ execute as @a at @s run function quest:tick
 
 function dungeon:sand/tick
 
-function player:leveling/reload
+
 function player:leveling/tick
+
+
+# 攻撃処理
+function player:click/tick
 
 
 

@@ -2,17 +2,22 @@ execute as @e[scores={autokill=1..},type=!player] run scoreboard players remove 
 execute as @e[scores={autokill=..0},type=!player] run function mob:main/killtp
 
 
-execute as @e[type=!player,tag=mobs] at @s run function mob:mob_action/list
+execute as @e[type=!player,tag=mobs,tag=specific_action] at @s run function mob:mob_action/list
 
 # glow
-execute as @e[tag=mobs] run function effect:glow/glow
+execute as @e[tag=mobs,scores={glow=1..}] run function player:effect/glow/glow
 
 # mob vs mob
 execute as @e[nbt={HurtTime:0s}] run tag @s remove exclude_hurttime
-execute as @e[tag=mobs,scores={HurtTime=1..},tag=!exclude_hurttime] at @s run function mob:main/attacked_entity
+
+# ここはdebugする必要がある(mobによってhurttimeが異なる)
+execute as @e[tag=mobs,nbt={HurtTime:10s},tag=!exclude_hurttime] at @s run function mob:main/attacked_entity
+execute as @e[tag=mobs,nbt={HurtTime:5s},tag=!exclude_hurttime] at @s run function mob:main/attacked_entity
+
+
+
+
 
 execute as @e[tag=mobs] run scoreboard players operation @s sword_xp = @s mob_xp
 execute as @e[tag=mobs] run scoreboard players operation @s magic_xp = @s mob_xp
 
-execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{xp_dsp:1}}}}] at @s run tp @s ~ ~ ~
-execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{xp_dsp:2}}}}] at @s run tp @s ~ ~ ~

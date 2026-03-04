@@ -1,7 +1,7 @@
 
 
 
-scoreboard players operation @s magic_xp = @n[tag=mobs,scores={HurtTime=0}] magic_xp
+scoreboard players operation @s magic_xp = @n[tag=mobs,nbt={HurtTime:0s}] magic_xp
 
 
 

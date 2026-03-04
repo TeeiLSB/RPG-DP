@@ -2,9 +2,9 @@ playsound minecraft:entity.player.attack.sweep
 
 
 
-execute as @n[tag=mobs,scores={HurtTime=10}] at @s run tag @s add sweep_exclude
-execute as @n[tag=mobs,scores={HurtTime=10}] at @s run tag @e[distance=..1.5,tag=mobs,tag=!sweep_exclude] add sword_sweep
-execute as @n[tag=mobs,scores={HurtTime=10}] at @s anchored eyes run particle sweep_attack ^ ^ ^
+execute as @n[tag=mobs,nbt={HurtTime:0s}] at @s run tag @s add sweep_exclude
+execute as @n[tag=mobs,nbt={HurtTime:0s}] at @s run tag @e[distance=..1.5,tag=mobs,tag=!sweep_exclude,nbt={HurtTime:0s}] add sword_sweep
+execute as @n[tag=mobs,nbt={HurtTime:0s}] at @s anchored eyes run particle sweep_attack ^ ^ ^
 
 
 execute as @e[tag=sword_sweep,tag=mobs] run attribute @s knockback_resistance base set 0.2

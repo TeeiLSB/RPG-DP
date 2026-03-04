@@ -11,4 +11,4 @@ execute if score @s calc matches 101.. run item modify entity @s saddle status:o
 
 data modify entity @s CustomName set from entity @s equipment.saddle.components.minecraft:custom_name
 
-
+data merge entity @s {CustomNameVisible:1b}

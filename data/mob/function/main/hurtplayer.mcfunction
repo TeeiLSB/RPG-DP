@@ -7,6 +7,6 @@ tag @s add ReceiveNonCrit
 execute on attacker run tag @s remove attacker
 
 execute unless entity @s[tag=sword_blockcounter] if score @s block_cd matches 1.. if score @s cd_blockcounter matches 0 run function class:swordman/bladecast/blockcounter/damage_recived
-
+execute at @s run function player:click/damage_main_calc
 
 advancement revoke @s only mob:entity_hurt

@@ -23,7 +23,7 @@ execute if entity @p[distance=..10,tag=player] if score @s[nbt={OnGround:true}] 
 execute if entity @p[distance=..10,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 57 run particle minecraft:block{block_state:sand} ~ ~0.5 ~ 0.5 0.5 0.5 0.1 15
 
 
-execute if score @s mob_tick_count matches 65 run function sword:trigger
+execute if score @s mob_tick_count matches 65 run function class:swordman/bladecast/trigger
 execute if score @s[nbt={OnGround:true}] mob_tick_count matches 65 run function player:motion/motion_apply {"x":"5","y":"3","z":"0","xm":"0","ym":"0","zm":"0"}
 
 execute if score @s mob_tick_count matches 65 run item replace entity @s weapon.mainhand with glass_bottle
@@ -46,7 +46,7 @@ execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] 
 execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 125 run particle minecraft:block{block_state:sand} ~ ~0.5 ~ 0.5 0.1 0.5 0.1 10
 
 
-execute if score @s mob_tick_count matches 130 run function sword:trigger
+execute if score @s mob_tick_count matches 130 run function class:swordman/bladecast/trigger
 execute if score @s mob_tick_count matches 130 run item replace entity @s weapon.mainhand with glass_bottle
 execute if score @s mob_tick_count matches 130 run scoreboard players set @s atkdmg 1
 execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] mob_tick_count matches 132 run function player:motion/motion_apply {"x":"0","y":"4","z":"0","xm":"5","ym":"0","zm":"0"}
@@ -56,7 +56,7 @@ execute if entity @p[distance=..20,tag=player] if score @s[nbt={OnGround:true}] 
 
 
 
-execute as @e[type=marker,tag=sword_marker] at @s as @e[dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] if entity @s[scores={HurtTime=0},type=player] run function sword:hitted
+execute as @e[type=marker,tag=sword_marker] at @s as @e[dx=0] positioned ~-0.5 ~-0.5 ~-0.5 if entity @s[dx=0] if entity @s[nbt={HurtTime:0s},type=player] run function class:swordman/bladecast/hitted
 
 
 execute if score @s mob_tick_count matches 145.. run scoreboard players set @s mob_tick_count 1

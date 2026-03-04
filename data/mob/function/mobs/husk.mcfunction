@@ -16,7 +16,7 @@ execute on vehicle run function mob:main/killtp
 tag @s add Name.Husk
 team join Rank.D
 
-data merge entity @s {CustomNameVisible:1b,IsBaby:0b}
+data merge entity @s {IsBaby:0b}
 
 
 

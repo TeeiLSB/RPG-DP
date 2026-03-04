@@ -29,5 +29,8 @@ scoreboard players reset $pitch_rng Temporary
 
 
     tag @s add Shooter
- execute anchored eyes positioned ^ ^ ^0.9 summon arrow run function class:archer/arrow/init
+ execute anchored eyes positioned ^ ^ ^0.9 rotated as @s rotated ~ ~ summon arrow run function class:archer/arrow/init
+  execute anchored eyes positioned ^ ^ ^0.9 rotated as @s rotated ~5 ~1 summon arrow run function class:archer/arrow/init
+   execute anchored eyes positioned ^ ^ ^0.9 rotated as @s rotated ~-5 ~1 summon arrow run function class:archer/arrow/init
+
     tag @s remove Shooter
