@@ -21,3 +21,9 @@ scoreboard objectives add mob_xp dummy
 
 scoreboard objectives add prev_sword_level dummy
 scoreboard objectives add prev_magic_level dummy
+
+
+
+# hotbar
+scoreboard objectives add HotbarSlot dummy
+scoreboard objectives add HotbarSlot.Pre dummy

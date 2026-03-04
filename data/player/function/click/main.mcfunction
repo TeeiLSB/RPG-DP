@@ -35,6 +35,7 @@ tag @n[tag=mobs,tag=Damage_Reciver] remove Damage_Reciver
 
 # リセット
 scoreboard players set @s dmgtemp 0
+scoreboard players set $dealt Temporary 0
 
 # プレイヤーが攻撃した時の効果
 function player:click/attacked_after

@@ -1,9 +1,4 @@
 
-
-
-
-function status:speed/dataget
-
 # 100にリセット
 scoreboard players set @s speed 100
 

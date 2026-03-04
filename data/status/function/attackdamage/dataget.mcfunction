@@ -1,4 +1,4 @@
-function status:attackdamage/get
+
 
 # reset
 scoreboard players set @s atkdmg 0

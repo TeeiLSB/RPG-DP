@@ -1,5 +1,4 @@
 
-function status:defense/defense_dataget
 
 
 # 0にリセット
