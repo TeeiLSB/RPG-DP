@@ -11,6 +11,7 @@ scoreboard objectives add Archer.ProgTimer dummy
 scoreboard objectives add ArcherShoot.ProgTimer dummy
 scoreboard objectives add ArcherPre.ProgTimer dummy
 
+scoreboard objectives add Player.Sneak dummy
 
 
 execute in overworld run summon marker 0.0 0.0 0.0 {UUID:[I; 2106,5308417,0,0]}

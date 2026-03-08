@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald",
+      "count": 1
+    },
+    "title": "収穫のお手伝い",
+    "description": "クエストの進捗状況",
+    "background": "minecraft:block/oak_planks",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "kill zombie": {
+      "trigger": "impossible"
+    }
+  }
+}

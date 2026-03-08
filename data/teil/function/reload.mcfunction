@@ -17,7 +17,7 @@ function ui:skill_tree/reload
 execute as @a run attribute @s minecraft:attack_damage base set 1
 
 # effects
-function teil:effect
+function teil:rule_and_effect
 
 # player ID
 function player:player_id/start

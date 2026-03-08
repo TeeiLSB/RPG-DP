@@ -1,4 +1,5 @@
-
+# sneak detection
+execute as @a at @s run function class:sneak/main
 
 
 # warrior
@@ -9,3 +10,5 @@ execute as @a at @s run function class:swordman/tick
 
 # archer
 execute as @a at @s run function class:archer/tick
+
+

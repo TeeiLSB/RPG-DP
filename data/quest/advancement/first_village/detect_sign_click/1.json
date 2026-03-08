@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "sign": {
+      "trigger": "minecraft:any_block_use",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "x": 196.5,
+                "y": 1.5,
+                "z": -69.5
+              },
+              "block": {
+                "blocks": "minecraft:oak_wall_sign"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "quest:first_village/main/trigger_adv/1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {
+      "id": "wheat",
+      "count": 1
+    },
+    "title": "小麦を採取する",
+    "description": "32個必要なようだ",
+    "background": "minecraft:block/oak_planks",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "quest:first_village/1/talk",
+  "criteria": {
+    "wow": {
+      "trigger": "impossible"
+    }
+  }
+}

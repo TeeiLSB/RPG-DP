@@ -1,5 +1,6 @@
-execute if items entity @s weapon.mainhand sheaf_pottery_sherd[custom_data~{Axe:1b}] run function class:warrior/remove_piercing
-execute if predicate class:sneaking if items entity @s weapon.mainhand sheaf_pottery_sherd[custom_data~{Axe:1b}] if score @s cd_cyclone_strike matches 0 run function class:warrior/set_piercing
+execute unless score @s Player.Sneak matches 3 if items entity @s weapon.mainhand sheaf_pottery_sherd[custom_data~{Axe:1b}] run function class:warrior/remove_piercing
+execute unless score @s Player.Sneak matches 2 if predicate class:sneaking if items entity @s weapon.mainhand sheaf_pottery_sherd[custom_data~{Axe:1b}] if score @s cd_cyclone_strike matches 0 run function class:warrior/set_piercing
+
 
 execute if score @s Warrior.ProgTimer matches 57..64 at @s run function class:warrior/skill_left/360s
 execute if score @s Warrior.ProgTimer matches 56 at @s run function class:warrior/skill_left/jump

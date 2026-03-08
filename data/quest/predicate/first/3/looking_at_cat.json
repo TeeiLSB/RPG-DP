@@ -1,0 +1,27 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific": {
+      "type": "minecraft:player",
+      "looking_at": {
+        "type": "cat",
+        "nbt": "{Tags:[\"Quest.F3\"]}",
+        "distance": {
+          "x": {
+            "min": 0,
+            "max": 5
+          },
+          "y": {
+            "min": 0,
+            "max": 5
+          },
+          "z": {
+            "min": 0,
+            "max": 5
+          }
+        }
+      }
+    }
+  }
+}

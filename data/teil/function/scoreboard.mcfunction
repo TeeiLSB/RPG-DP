@@ -15,6 +15,8 @@ scoreboard objectives add has_sword dummy
 # bgm
 scoreboard objectives add bgm_time dummy
 
+# xp
+scoreboard objectives add level_all_xp dummy
 
 # temp
 scoreboard objectives add Temporary dummy

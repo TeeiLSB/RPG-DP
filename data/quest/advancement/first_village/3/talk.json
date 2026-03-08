@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "villager_spawn_egg",
+      "count": 1
+    },
+    "title": "飼い主に話しかける",
+    "description": "湖の近くの家にいるようだ",
+    "background": "minecraft:block/oak_planks",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "quest:first_village/3/main",
+  "criteria": {
+    "kill zombie": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+          "nbt": "{Tags:[\"Quest.F3\"]}"
+        },
+        "entity": {
+          "type": "minecraft:villager",
+          "nbt": "{Tags:[\"Quest.F3\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "quest:first_village/npc/chat/mubi_rato/0"
+  }
+}

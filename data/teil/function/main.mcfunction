@@ -16,7 +16,7 @@ execute as @a at @s run function debug:debug_tick
 function mob:tick
 
 function items:hasitem/tick
-execute as @a at @s run function magic:tick
+#execute as @a at @s run function magic:tick
 
 function items:item_ability/tick
 function items:item_cooldown/tick
@@ -35,7 +35,7 @@ execute if score $Tick tick matches 21 run scoreboard players set $Tick tick 1
 
 function player:effect/tick
 
-execute as @a at @s run function quest:tick
+function quest:tick
 
 #execute as @a run clear @s glass_bottle
 
@@ -48,7 +48,8 @@ function player:leveling/tick
 # 攻撃処理
 function player:click/tick
 
-
+# デフォルトのadvancementを削除
+execute if score $Tick tick matches 20 run function teil:clear_advancement
 
 
 

@@ -21,10 +21,10 @@ execute if entity @s[tag=ReceiveSweep] unless score @s prehp = @s health run loo
 execute if entity @s[tag=ReceiveMagic] unless score @s prehp = @s health run loot spawn ~ ~ ~ loot status:dmg_dsp_magic
 execute if entity @s[tag=ReceiveFire] unless score @s prehp = @s health run loot spawn ~ ~ ~ loot status:dmg_dsp_fire
 
-execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run scoreboard players set @s autokill 15
+
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run data modify entity @s CustomName set from entity @s Item.components."minecraft:custom_name"
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run execute store result score @s rng run random value 1..10
-execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run data merge entity @s {CustomNameVisible:1b,PickupDelay:32767}
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run data merge entity @s {CustomNameVisible:1b,PickupDelay:32767,PortalCooldown:115s}
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{dmg_dsp:1}}}},distance=0] run function status:display/motion_rng
 
 

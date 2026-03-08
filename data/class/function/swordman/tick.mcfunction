@@ -1,5 +1,5 @@
-execute if items entity @s weapon.mainhand blade_pottery_sherd[custom_data~{Sword:1b}] run function class:swordman/remove_piercing
-execute if predicate class:sneaking if items entity @s weapon.mainhand blade_pottery_sherd[custom_data~{Sword:1b}] if score @s cd_throw_sword matches 0 run function class:swordman/set_piercing
+execute unless score @s Player.Sneak matches 3 if items entity @s weapon.mainhand blade_pottery_sherd[custom_data~{Sword:1b}] run function class:swordman/remove_piercing
+execute unless score @s Player.Sneak matches 2 if predicate class:sneaking if items entity @s weapon.mainhand blade_pottery_sherd[custom_data~{Sword:1b}] if score @s cd_throw_sword matches 0 run function class:swordman/set_piercing
 
 
 execute if score @s block_cd matches 1.. run scoreboard players remove @s block_cd 1

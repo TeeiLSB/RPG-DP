@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {
+      "id": "cat_spawn_egg",
+      "count": 1
+    },
+    "title": "猫を探す",
+    "description": "ヒマワリの近くにいるようだ",
+    "background": "minecraft:block/oak_planks",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "parent": "quest:first_village/3/talk",
+  "criteria": {
+    "wow": {
+      "trigger": "impossible"
+    }
+  }
+}

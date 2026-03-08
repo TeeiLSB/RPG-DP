@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald",
+      "count": 1
+    },
+    "title": "迷い猫の捜索",
+    "description": "クエストの進捗状況",
+    "background": "minecraft:block/oak_planks",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "kill zombie": {
+      "trigger": "impossible"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+$function quest:first_village/tick_action/actions/$(id)

@@ -7,6 +7,8 @@ scoreboard players set @s maxmp 200
 scoreboard players set @s mp 200
 
 scoreboard players set @s mob_xp 10
+scoreboard players operation @s sword_xp = @s mob_xp
+scoreboard players operation @s magic_xp = @s mob_xp
 
 
 effect give @s instant_damage infinite 252 true

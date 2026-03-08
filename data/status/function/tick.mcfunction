@@ -1,33 +1,10 @@
 
-# speed
-execute as @a at @s run function status:speed/tick
 
 
 execute as @a at @s run function status:health/health_calc
 
-execute as @a at @s run function status:defense/defense_calc
 execute as @a at @s run function status:magicpower/tick
 execute as @a at @s run function status:regen/tick
-
-
-
-# effect
-
-effect give @a saturation infinite 252 true
-effect give @a resistance infinite 252 true
-
-
-
-
-
-
-
-# execute as @a at @s if score @s health matches 201.. run function status:absorb/calc
-
-execute as @a at @s run function status:attackdamage/dataget
-
-
-
 
 # mp
 
